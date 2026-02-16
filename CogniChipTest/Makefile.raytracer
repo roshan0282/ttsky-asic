@@ -1,0 +1,60 @@
+# Makefile for VGA Raytracer with Verilator
+# Usage: make -f Makefile.raytracer
+
+# Verilator configuration
+VERILATOR = verilator
+VERILATOR_FLAGS = --cc --exe --build -j 0
+VERILATOR_FLAGS += --trace --trace-fst
+VERILATOR_FLAGS += -Wall -Wno-fatal
+VERILATOR_FLAGS += -O3
+
+# Source files
+RTL_SOURCES = ray_sphere_intersect.sv vga_raytracer.sv
+CPP_SOURCES = tb_vga_raytracer.cpp
+
+# Top module
+TOP_MODULE = vga_raytracer
+
+# Output
+EXECUTABLE = obj_dir/V$(TOP_MODULE)
+
+# Build targets
+.PHONY: all clean run view
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(RTL_SOURCES) $(CPP_SOURCES)
+	@echo "Building VGA Raytracer with Verilator..."
+	$(VERILATOR) $(VERILATOR_FLAGS) --top-module $(TOP_MODULE) $(RTL_SOURCES) $(CPP_SOURCES)
+	@echo "Build complete!"
+
+run: $(EXECUTABLE)
+	@echo "Running raytracer simulation..."
+	./$(EXECUTABLE)
+	@echo ""
+	@echo "Output saved to raytracer_output.ppm"
+
+view: raytracer_output.ppm
+	@echo "Converting PPM to PNG..."
+	@command -v convert >/dev/null 2>&1 && \
+		convert raytracer_output.ppm raytracer_output.png && \
+		echo "Saved as raytracer_output.png" || \
+		echo "ImageMagick 'convert' not found. View raytracer_output.ppm directly."
+
+clean:
+	rm -rf obj_dir
+	rm -f raytracer_output.ppm raytracer_output.png
+	rm -f *.vcd *.fst
+
+help:
+	@echo "VGA Raytracer Makefile"
+	@echo "======================"
+	@echo "Usage:"
+	@echo "  make -f Makefile.raytracer          - Build the simulation"
+	@echo "  make -f Makefile.raytracer run      - Build and run simulation"
+	@echo "  make -f Makefile.raytracer view     - Convert PPM output to PNG"
+	@echo "  make -f Makefile.raytracer clean    - Clean build artifacts"
+	@echo ""
+	@echo "Output:"
+	@echo "  raytracer_output.ppm - Raw PPM image (640x480)"
+	@echo "  raytracer_output.png - PNG converted image"
