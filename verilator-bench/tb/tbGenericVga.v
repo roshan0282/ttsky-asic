@@ -1,7 +1,8 @@
-// Generic testbench wrapper for VGA projects - Verilator compatible
-// This testbench can work with any module that has VGA outputs
+// generic testbench wrapper for VGA projects - verilator compatible
+// this testbench generates VGA timing and instantiates a core module
+// the core module should output 8-bit RGB colors given x/y/visible inputs
 module tbGenericVga(
-    // Clock and reset (exposed as ports for Verilator)
+    // clock and reset (exposed as ports for verilator)
     input clock50MHz,
     input resetn,
     
@@ -15,68 +16,61 @@ module tbGenericVga(
     output [7:0] green,
     output [7:0] blue
 );
-    wire [7:0] dut_uo_out;
-    wire [7:0] dut_uio_out;
-    wire [7:0] dut_uio_oe;
-    reg [7:0] ui_in = 0;
-    reg [7:0] uio_in = 0;
-    
-    // Instantiate the design under test using TOP_MODULE define
-    `ifdef TOP_MODULE
-        `TOP_MODULE dut (
-    `else
-        tt_um_minimal_vga dut (
-    `endif
-        .clk(clock50MHz),
-        .rst_n(resetn),
-        .ena(1'b1),
-        .ui_in(ui_in),
-        .uio_in(uio_in),
-        .uo_out(dut_uo_out),
-        .uio_out(dut_uio_out),
-        .uio_oe(dut_uio_oe)
-    );
-    
-    // internal counters to track pixel coordinates
+    // vga timing counters
     reg [9:0] xReg, yReg;
-    reg visibleReg;
+    reg hSyncReg, vSyncReg, visibleReg;
+    
+    // vga 640x480 @ 60hz timing (full horizontal: 800, full vertical: 525)
     always @(posedge clock50MHz) begin
         if (!resetn) begin
             xReg <= 10'd0;
             yReg <= 10'd0;
+            hSyncReg <= 1'b1;
+            vSyncReg <= 1'b1;
             visibleReg <= 1'b0;
         end else begin
-            // increment x counter, wrap at 799 (full vga horizontal including blanking)
-            if (xReg == 10'd799)
-                xReg <= 10'd0;
-            else
-                xReg <= xReg + 10'd1;
-            
-            // increment y counter when x wraps, wrap at 524 (full vga vertical)
+            // horizontal counter: 0-799
             if (xReg == 10'd799) begin
+                xReg <= 10'd0;
+                // vertical counter: 0-524
                 if (yReg == 10'd524)
                     yReg <= 10'd0;
                 else
                     yReg <= yReg + 10'd1;
+            end else begin
+                xReg <= xReg + 10'd1;
             end
             
-            // visible region is first 640x480 pixels
+            // hsync pulse: active low during sync period (656-751)
+            hSyncReg <= (xReg >= 10'd656 && xReg < 10'd752) ? 1'b0 : 1'b1;
+            // vsync pulse: active low during sync period (490-491)
+            vSyncReg <= (yReg >= 10'd490 && yReg < 10'd492) ? 1'b0 : 1'b1;
+            // visible region: first 640x480 pixels
             visibleReg <= (xReg < 10'd640 && yReg < 10'd480);
         end
     end
     
-    // extract vga signals from tinytapeout format
-    // uo_out format: {hSync, b[0], g[0], r[0], vSync, b[1], g[1], r[1]}
-    assign hSync = dut_uo_out[7];
-    assign vSync = dut_uo_out[3];
-    assign visible = visibleReg;
+    // expose timing signals
+    assign hSync = hSyncReg;
+    assign vSync = vSyncReg;
     assign xOrd = xReg;
     assign yOrd = yReg;
-    // expand 2-bit color to 8-bit (replicate 4 times for brightness)
-    wire [1:0] r_2bit = {dut_uo_out[0], dut_uo_out[4]};  // {r[1], r[0]}
-    wire [1:0] g_2bit = {dut_uo_out[1], dut_uo_out[5]};  // {g[1], g[0]}
-    wire [1:0] b_2bit = {dut_uo_out[2], dut_uo_out[6]};  // {b[1], b[0]}
-    assign red   = {r_2bit, r_2bit, r_2bit, r_2bit};
-    assign green = {g_2bit, g_2bit, g_2bit, g_2bit};
-    assign blue  = {b_2bit, b_2bit, b_2bit, b_2bit};
+    assign visible = visibleReg;
+    
+    // instantiate the design under test using TOP_MODULE define
+    // DUT should take x, y, visible and output 8-bit RGB
+    `ifdef TOP_MODULE
+        `TOP_MODULE dut (
+    `else
+        vgaCore dut (
+    `endif
+        .clk(clock50MHz),
+        .rst_n(resetn),
+        .xOrd(xReg),
+        .yOrd(yReg),
+        .visible(visibleReg),
+        .red(red),
+        .green(green),
+        .blue(blue)
+    );
 endmodule

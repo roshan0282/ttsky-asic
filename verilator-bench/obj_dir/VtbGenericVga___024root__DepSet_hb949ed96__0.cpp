@@ -5,44 +5,6 @@
 #include "VtbGenericVga__pch.h"
 #include "VtbGenericVga___024root.h"
 
-void VtbGenericVga___024root___ico_sequent__TOP__0(VtbGenericVga___024root* vlSelf);
-
-void VtbGenericVga___024root___eval_ico(VtbGenericVga___024root* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___eval_ico\n"); );
-    VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Body
-    if ((1ULL & vlSelfRef.__VicoTriggered.word(0U))) {
-        VtbGenericVga___024root___ico_sequent__TOP__0(vlSelf);
-    }
-}
-
-VL_INLINE_OPT void VtbGenericVga___024root___ico_sequent__TOP__0(VtbGenericVga___024root* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___ico_sequent__TOP__0\n"); );
-    VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Body
-    vlSelfRef.tbGenericVga__DOT__dut__DOT__reset = 
-        (1U & (~ (IData)(vlSelfRef.resetn)));
-}
-
-void VtbGenericVga___024root___eval_triggers__ico(VtbGenericVga___024root* vlSelf);
-
-bool VtbGenericVga___024root___eval_phase__ico(VtbGenericVga___024root* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___eval_phase__ico\n"); );
-    VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Init
-    CData/*0:0*/ __VicoExecute;
-    // Body
-    VtbGenericVga___024root___eval_triggers__ico(vlSelf);
-    __VicoExecute = vlSelfRef.__VicoTriggered.any();
-    if (__VicoExecute) {
-        VtbGenericVga___024root___eval_ico(vlSelf);
-    }
-    return (__VicoExecute);
-}
-
 void VtbGenericVga___024root___eval_act(VtbGenericVga___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___eval_act\n"); );
     VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
@@ -50,22 +12,14 @@ void VtbGenericVga___024root___eval_act(VtbGenericVga___024root* vlSelf) {
 }
 
 void VtbGenericVga___024root___nba_sequent__TOP__0(VtbGenericVga___024root* vlSelf);
-void VtbGenericVga___024root___nba_sequent__TOP__1(VtbGenericVga___024root* vlSelf);
-void VtbGenericVga___024root___nba_sequent__TOP__2(VtbGenericVga___024root* vlSelf);
 
 void VtbGenericVga___024root___eval_nba(VtbGenericVga___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___eval_nba\n"); );
     VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
-    if ((3ULL & vlSelfRef.__VnbaTriggered.word(0U))) {
-        VtbGenericVga___024root___nba_sequent__TOP__0(vlSelf);
-    }
     if ((1ULL & vlSelfRef.__VnbaTriggered.word(0U))) {
-        VtbGenericVga___024root___nba_sequent__TOP__1(vlSelf);
-    }
-    if ((6ULL & vlSelfRef.__VnbaTriggered.word(0U))) {
-        VtbGenericVga___024root___nba_sequent__TOP__2(vlSelf);
+        VtbGenericVga___024root___nba_sequent__TOP__0(vlSelf);
     }
 }
 
@@ -73,170 +27,418 @@ VL_INLINE_OPT void VtbGenericVga___024root___nba_sequent__TOP__0(VtbGenericVga__
     VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___nba_sequent__TOP__0\n"); );
     VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Body
-    vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_clock 
-        = (1U & ((~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__reset)) 
-                 & (~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_clock))));
-    if (vlSelfRef.tbGenericVga__DOT__dut__DOT__reset) {
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__red_int = 0U;
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__green_int = 0U;
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__blue_int = 0U;
-    } else {
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__red_int 
-            = vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_red;
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__green_int 
-            = vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_green;
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__blue_int 
-            = vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_blue;
-    }
-    vlSelfRef.red = (0xffU & ((0xc0U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__red_int)) 
-                              | ((0x30U & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__red_int) 
-                                           >> 2U)) 
-                                 | ((0xcU & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__red_int) 
-                                             >> 4U)) 
-                                    | (3U & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__red_int) 
-                                             >> 6U))))));
-    vlSelfRef.green = (0xffU & ((0xc0U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__green_int)) 
-                                | ((0x30U & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__green_int) 
-                                             >> 2U)) 
-                                   | ((0xcU & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__green_int) 
-                                               >> 4U)) 
-                                      | (3U & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__green_int) 
-                                               >> 6U))))));
-    vlSelfRef.blue = (0xffU & ((0xc0U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__blue_int)) 
-                               | ((0x30U & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__blue_int) 
-                                            >> 2U)) 
-                                  | ((0xcU & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__blue_int) 
-                                              >> 4U)) 
-                                     | (3U & ((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__blue_int) 
-                                              >> 6U))))));
-}
-
-VL_INLINE_OPT void VtbGenericVga___024root___nba_sequent__TOP__1(VtbGenericVga___024root* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___nba_sequent__TOP__1\n"); );
-    VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    SData/*9:0*/ __Vdly__tbGenericVga__DOT__xReg;
-    __Vdly__tbGenericVga__DOT__xReg = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__digit = 0;
+    CData/*6:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__Vfuncout = 0;
+    CData/*3:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__digit;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__digit = 0;
     SData/*9:0*/ __Vdly__tbGenericVga__DOT__yReg;
     __Vdly__tbGenericVga__DOT__yReg = 0;
+    SData/*9:0*/ __Vdly__tbGenericVga__DOT__xReg;
+    __Vdly__tbGenericVga__DOT__xReg = 0;
+    CData/*5:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__hours;
+    __Vdly__tbGenericVga__DOT__dut__DOT__hours = 0;
+    CData/*5:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__minutes;
+    __Vdly__tbGenericVga__DOT__dut__DOT__minutes = 0;
+    CData/*5:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__seconds;
+    __Vdly__tbGenericVga__DOT__dut__DOT__seconds = 0;
+    IData/*16:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds;
+    __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds = 0;
+    SData/*8:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter;
+    __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter = 0;
+    IData/*19:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter;
+    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter = 0;
+    CData/*3:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state;
+    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state = 0;
+    CData/*3:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex;
+    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex = 0;
+    CData/*6:0*/ __VdlyVal__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0;
+    __VdlyVal__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 = 0;
+    SData/*12:0*/ __VdlyDim0__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0;
+    __VdlyDim0__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 = 0;
+    CData/*0:0*/ __VdlySet__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0;
+    __VdlySet__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 = 0;
     // Body
-    __Vdly__tbGenericVga__DOT__xReg = vlSelfRef.tbGenericVga__DOT__xReg;
+    __Vdly__tbGenericVga__DOT__dut__DOT__hours = vlSelfRef.tbGenericVga__DOT__dut__DOT__hours;
+    __Vdly__tbGenericVga__DOT__dut__DOT__minutes = vlSelfRef.tbGenericVga__DOT__dut__DOT__minutes;
+    __Vdly__tbGenericVga__DOT__dut__DOT__seconds = vlSelfRef.tbGenericVga__DOT__dut__DOT__seconds;
+    __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds 
+        = vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds;
+    __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter 
+        = vlSelfRef.tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter;
     __Vdly__tbGenericVga__DOT__yReg = vlSelfRef.tbGenericVga__DOT__yReg;
+    __Vdly__tbGenericVga__DOT__xReg = vlSelfRef.tbGenericVga__DOT__xReg;
+    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter 
+        = vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter;
+    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state 
+        = vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state;
+    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+        = vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex;
+    __VdlySet__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 = 0U;
+    if (vlSelfRef.tbGenericVga__DOT__dut__DOT__timerWrEn) {
+        vlSelfRef.tbGenericVga__DOT__dut__DOT__charRam__DOT____Vlvbound_h9db3a3ed__0 
+            = vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData;
+        if ((0x12bfU >= (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr))) {
+            __VdlyVal__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__charRam__DOT____Vlvbound_h9db3a3ed__0;
+            __VdlyDim0__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr;
+            __VdlySet__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0 = 1U;
+        }
+    }
     if (vlSelfRef.resetn) {
+        if ((0x1f3U == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter))) {
+            if ((0x1869fU == vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds)) {
+                if ((0x3bU == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__seconds))) {
+                    if ((0x3bU == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__minutes))) {
+                        __Vdly__tbGenericVga__DOT__dut__DOT__hours 
+                            = ((0x17U == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__hours))
+                                ? 0U : (0x3fU & ((IData)(1U) 
+                                                 + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__hours))));
+                        __Vdly__tbGenericVga__DOT__dut__DOT__minutes = 0U;
+                    } else {
+                        __Vdly__tbGenericVga__DOT__dut__DOT__minutes 
+                            = (0x3fU & ((IData)(1U) 
+                                        + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__minutes)));
+                    }
+                    __Vdly__tbGenericVga__DOT__dut__DOT__seconds = 0U;
+                } else {
+                    __Vdly__tbGenericVga__DOT__dut__DOT__seconds 
+                        = (0x3fU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__seconds)));
+                }
+                __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds = 0U;
+            } else {
+                __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds 
+                    = (0x1ffffU & ((IData)(1U) + vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds));
+            }
+            __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter = 0U;
+        } else {
+            __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter 
+                = (0x1ffU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter)));
+        }
         if ((0x31fU == (IData)(vlSelfRef.tbGenericVga__DOT__xReg))) {
-            __Vdly__tbGenericVga__DOT__xReg = 0U;
             __Vdly__tbGenericVga__DOT__yReg = ((0x20cU 
                                                 == (IData)(vlSelfRef.tbGenericVga__DOT__yReg))
                                                 ? 0U
                                                 : (0x3ffU 
                                                    & ((IData)(1U) 
                                                       + (IData)(vlSelfRef.tbGenericVga__DOT__yReg))));
+            __Vdly__tbGenericVga__DOT__xReg = 0U;
         } else {
             __Vdly__tbGenericVga__DOT__xReg = (0x3ffU 
                                                & ((IData)(1U) 
                                                   + (IData)(vlSelfRef.tbGenericVga__DOT__xReg)));
         }
+        vlSelfRef.tbGenericVga__DOT__hSyncReg = (1U 
+                                                 & (~ 
+                                                    ((0x290U 
+                                                      <= (IData)(vlSelfRef.tbGenericVga__DOT__xReg)) 
+                                                     & (0x2f0U 
+                                                        > (IData)(vlSelfRef.tbGenericVga__DOT__xReg)))));
+        vlSelfRef.tbGenericVga__DOT__vSyncReg = (1U 
+                                                 & (~ 
+                                                    ((0x1eaU 
+                                                      <= (IData)(vlSelfRef.tbGenericVga__DOT__yReg)) 
+                                                     & (0x1ecU 
+                                                        > (IData)(vlSelfRef.tbGenericVga__DOT__yReg)))));
         vlSelfRef.tbGenericVga__DOT__visibleReg = (
                                                    (0x280U 
                                                     > (IData)(vlSelfRef.tbGenericVga__DOT__xReg)) 
                                                    & (0x1e0U 
                                                       > (IData)(vlSelfRef.tbGenericVga__DOT__yReg)));
-    } else {
-        __Vdly__tbGenericVga__DOT__xReg = 0U;
-        __Vdly__tbGenericVga__DOT__yReg = 0U;
-        vlSelfRef.tbGenericVga__DOT__visibleReg = 0U;
-    }
-    vlSelfRef.tbGenericVga__DOT__xReg = __Vdly__tbGenericVga__DOT__xReg;
-    vlSelfRef.tbGenericVga__DOT__yReg = __Vdly__tbGenericVga__DOT__yReg;
-    vlSelfRef.xOrd = vlSelfRef.tbGenericVga__DOT__xReg;
-    vlSelfRef.yOrd = vlSelfRef.tbGenericVga__DOT__yReg;
-    vlSelfRef.visible = vlSelfRef.tbGenericVga__DOT__visibleReg;
-}
-
-VL_INLINE_OPT void VtbGenericVga___024root___nba_sequent__TOP__2(VtbGenericVga___024root* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___nba_sequent__TOP__2\n"); );
-    VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Init
-    CData/*0:0*/ tbGenericVga__DOT__dut__DOT__visible_int;
-    tbGenericVga__DOT__dut__DOT__visible_int = 0;
-    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__dist_sq;
-    tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__dist_sq = 0;
-    SData/*9:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count;
-    __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count = 0;
-    SData/*9:0*/ __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count;
-    __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count = 0;
-    // Body
-    __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count 
-        = vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count;
-    __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count 
-        = vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count;
-    if (vlSelfRef.tbGenericVga__DOT__dut__DOT__reset) {
-        __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count = 0U;
-        __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count = 0U;
-    } else if ((0x31fU == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count))) {
-        __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count = 0U;
-        __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count 
-            = ((0x20cU == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count))
-                ? 0U : (0x3ffU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count))));
-    } else {
-        __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count 
-            = (0x3ffU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count)));
-    }
-    vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count 
-        = __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count;
-    vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count 
-        = __Vdly__tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count;
-    vlSelfRef.vSync = (1U & (~ ((0x1eaU <= (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count)) 
-                                & (0x1ecU > (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count)))));
-    vlSelfRef.hSync = (1U & (~ ((0x290U <= (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count)) 
-                                & (0x2f0U > (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count)))));
-    tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__dist_sq 
-        = VL_SHIFTRS_III(32,32,32, (VL_MULS_III(32, 
-                                                VL_EXTENDS_II(32,18, 
-                                                              (0x3ffffU 
-                                                               & (VL_SHIFTL_III(18,18,32, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count), 8U) 
-                                                                  - (IData)(0x14000U)))), 
-                                                VL_EXTENDS_II(32,18, 
-                                                              (0x3ffffU 
-                                                               & (VL_SHIFTL_III(18,18,32, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count), 8U) 
-                                                                  - (IData)(0x14000U))))) 
-                                    + VL_MULS_III(32, 
-                                                  VL_EXTENDS_II(32,18, 
-                                                                (0x3ffffU 
-                                                                 & (VL_SHIFTL_III(18,18,32, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count), 8U) 
-                                                                    - (IData)(0xf000U)))), 
-                                                  VL_EXTENDS_II(32,18, 
-                                                                (0x3ffffU 
-                                                                 & (VL_SHIFTL_III(18,18,32, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count), 8U) 
-                                                                    - (IData)(0xf000U)))))), 8U);
-    tbGenericVga__DOT__dut__DOT__visible_int = ((0x280U 
-                                                 > (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__h_count)) 
-                                                & (0x1e0U 
-                                                   > (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__v_count)));
-    if (tbGenericVga__DOT__dut__DOT__visible_int) {
-        if (VL_GTS_III(32, 0x271000U, tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__dist_sq)) {
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__unnamedblk1__DOT__shade 
-                = (0xffU & ((IData)(0xffU) - (tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__dist_sq 
-                                              >> 8U)));
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_red 
-                = vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__unnamedblk1__DOT__shade;
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_green 
-                = (0xffU & VL_SHIFTR_III(8,8,32, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__unnamedblk1__DOT__shade), 1U));
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_blue 
-                = (0xffU & VL_SHIFTR_III(8,8,32, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__unnamedblk1__DOT__shade), 2U));
+        if ((0U == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state))) {
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__timerWrEn = 0U;
+            if ((0xc34ffU == vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter)) {
+                __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter = 0U;
+                __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state = 1U;
+                __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex = 0U;
+            } else {
+                __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter 
+                    = (0xfffffU & ((IData)(1U) + vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter));
+            }
+        } else if ((1U == (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state))) {
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__timerWrEn = 1U;
+            if ((8U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                if ((4U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                    if ((2U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state = 0U;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerWrEn = 0U;
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex = 0U;
+                    } else if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__digit 
+                            = (0xfU & VL_MODDIV_III(17, 
+                                                    (0x1ffffU 
+                                                     & VL_MODDIV_III(17, 
+                                                                     (0x1ffffU 
+                                                                      & VL_MODDIV_III(17, 
+                                                                                (0x1ffffU 
+                                                                                & VL_MODDIV_III(17, vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds, (IData)(0x2710U))), (IData)(0x3e8U))), (IData)(0x64U))), (IData)(0xaU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__Vfuncout 
+                            = (0x7fU & ((IData)(0x30U) 
+                                        + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__digit)));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 0xfU;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                            = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__0__Vfuncout;
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex = 0U;
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state = 0U;
+                    } else {
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__digit 
+                            = (0xfU & VL_DIV_III(17, 
+                                                 (0x1ffffU 
+                                                  & VL_MODDIV_III(17, 
+                                                                  (0x1ffffU 
+                                                                   & VL_MODDIV_III(17, 
+                                                                                (0x1ffffU 
+                                                                                & VL_MODDIV_III(17, vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds, (IData)(0x2710U))), (IData)(0x3e8U))), (IData)(0x64U))), (IData)(0xaU)));
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                            = (0xfU & ((IData)(1U) 
+                                       + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__Vfuncout 
+                            = (0x7fU & ((IData)(0x30U) 
+                                        + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__digit)));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 0xeU;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                            = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__1__Vfuncout;
+                    }
+                } else if ((2U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                    if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__digit 
+                            = (0xfU & VL_DIV_III(17, 
+                                                 (0x1ffffU 
+                                                  & VL_MODDIV_III(17, 
+                                                                  (0x1ffffU 
+                                                                   & VL_MODDIV_III(17, vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds, (IData)(0x2710U))), (IData)(0x3e8U))), (IData)(0x64U)));
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                            = (0xfU & ((IData)(1U) 
+                                       + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__Vfuncout 
+                            = (0x7fU & ((IData)(0x30U) 
+                                        + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__digit)));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 0xdU;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                            = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__2__Vfuncout;
+                    } else {
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__digit 
+                            = (0xfU & VL_DIV_III(17, 
+                                                 (0x1ffffU 
+                                                  & VL_MODDIV_III(17, vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds, (IData)(0x2710U))), (IData)(0x3e8U)));
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                            = (0xfU & ((IData)(1U) 
+                                       + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__Vfuncout 
+                            = (0x7fU & ((IData)(0x30U) 
+                                        + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__digit)));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 0xcU;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                            = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__3__Vfuncout;
+                    }
+                } else if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__digit 
+                        = (0xfU & VL_DIV_III(17, vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds, (IData)(0x2710U)));
+                    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                        = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__Vfuncout 
+                        = (0x7fU & ((IData)(0x30U) 
+                                    + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__digit)));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 0xbU;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                        = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__4__Vfuncout;
+                } else {
+                    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                        = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 0xaU;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData = 0x2eU;
+                }
+            } else if ((4U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                if ((2U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                    if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__digit 
+                            = (0xfU & VL_MODDIV_III(6, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__seconds), (IData)(0xaU)));
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                            = (0xfU & ((IData)(1U) 
+                                       + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__Vfuncout 
+                            = (0x7fU & ((IData)(0x30U) 
+                                        + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__digit)));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 9U;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                            = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__5__Vfuncout;
+                    } else {
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__digit 
+                            = (0xfU & VL_DIV_III(6, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__seconds), (IData)(0xaU)));
+                        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                            = (0xfU & ((IData)(1U) 
+                                       + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__Vfuncout 
+                            = (0x7fU & ((IData)(0x30U) 
+                                        + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__digit)));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 8U;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                            = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__6__Vfuncout;
+                    }
+                } else if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                        = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 7U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData = 0x3aU;
+                } else {
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__digit 
+                        = (0xfU & VL_MODDIV_III(6, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__minutes), (IData)(0xaU)));
+                    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                        = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__Vfuncout 
+                        = (0x7fU & ((IData)(0x30U) 
+                                    + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__digit)));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 6U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                        = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__7__Vfuncout;
+                }
+            } else if ((2U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__digit 
+                        = (0xfU & VL_DIV_III(6, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__minutes), (IData)(0xaU)));
+                    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                        = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__Vfuncout 
+                        = (0x7fU & ((IData)(0x30U) 
+                                    + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__digit)));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 5U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                        = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__8__Vfuncout;
+                } else {
+                    __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                        = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 4U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData = 0x3aU;
+                }
+            } else if ((1U & (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex))) {
+                __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__digit 
+                    = (0xfU & VL_MODDIV_III(6, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__hours), (IData)(0xaU)));
+                __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                    = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__Vfuncout 
+                    = (0x7fU & ((IData)(0x30U) + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__digit)));
+                vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 3U;
+                vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                    = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__9__Vfuncout;
+            } else {
+                __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__digit 
+                    = (0xfU & VL_DIV_III(6, (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__hours), (IData)(0xaU)));
+                __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+                    = (0xfU & ((IData)(1U) + (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__Vfuncout 
+                    = (0x7fU & ((IData)(0x30U) + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__digit)));
+                vlSelfRef.tbGenericVga__DOT__dut__DOT__timerAddr = 2U;
+                vlSelfRef.tbGenericVga__DOT__dut__DOT__timerData 
+                    = __Vfunc_tbGenericVga__DOT__dut__DOT__timerDisp__DOT__digitToAscii__10__Vfuncout;
+            }
         } else {
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_red = 0x14U;
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_green = 0x1eU;
-            vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_blue = 0x3cU;
+            __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state = 0U;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__timerWrEn = 0U;
         }
     } else {
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_red = 0U;
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_green = 0U;
-        vlSelfRef.tbGenericVga__DOT__dut__DOT__raytracer_core__DOT__pixel_blue = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__seconds = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__minutes = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__hours = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter = 0U;
+        __Vdly__tbGenericVga__DOT__yReg = 0U;
+        __Vdly__tbGenericVga__DOT__xReg = 0U;
+        vlSelfRef.tbGenericVga__DOT__hSyncReg = 1U;
+        vlSelfRef.tbGenericVga__DOT__vSyncReg = 1U;
+        vlSelfRef.tbGenericVga__DOT__visibleReg = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state = 0U;
+        __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex = 0U;
+        vlSelfRef.tbGenericVga__DOT__dut__DOT__timerWrEn = 0U;
     }
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__charRamDataRdB 
+        = ((0x12bfU >= (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__charRamAddrB))
+            ? vlSelfRef.tbGenericVga__DOT__dut__DOT__charRam__DOT__memory
+           [vlSelfRef.tbGenericVga__DOT__dut__DOT__charRamAddrB]
+            : 0U);
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__clkCounter__DOT__tickCounter;
+    if (__VdlySet__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0) {
+        vlSelfRef.tbGenericVga__DOT__dut__DOT__charRam__DOT__memory[__VdlyDim0__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0] 
+            = __VdlyVal__tbGenericVga__DOT__dut__DOT__charRam__DOT__memory__v0;
+    }
+    vlSelfRef.tbGenericVga__DOT__yReg = __Vdly__tbGenericVga__DOT__yReg;
+    vlSelfRef.tbGenericVga__DOT__xReg = __Vdly__tbGenericVga__DOT__xReg;
+    vlSelfRef.hSync = vlSelfRef.tbGenericVga__DOT__hSyncReg;
+    vlSelfRef.vSync = vlSelfRef.tbGenericVga__DOT__vSyncReg;
+    vlSelfRef.visible = vlSelfRef.tbGenericVga__DOT__visibleReg;
+    vlSelfRef.yOrd = vlSelfRef.tbGenericVga__DOT__yReg;
+    vlSelfRef.xOrd = vlSelfRef.tbGenericVga__DOT__xReg;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__charRamAddrB 
+        = (0x1fffU & ((0xfc0U & ((IData)(vlSelfRef.tbGenericVga__DOT__yReg) 
+                                 << 3U)) + ((0x3f0U 
+                                             & ((IData)(vlSelfRef.tbGenericVga__DOT__yReg) 
+                                                << 1U)) 
+                                            + (0x7fU 
+                                               & ((IData)(vlSelfRef.tbGenericVga__DOT__xReg) 
+                                                  >> 3U)))));
+    vlSelfRef.red = (((IData)(vlSelfRef.tbGenericVga__DOT__visibleReg) 
+                      & (vlSelfRef.tbGenericVga__DOT__dut__DOT__textGen__DOT__font__DOT__fontMemory
+                         [(((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__charRamDataRdB) 
+                            << 3U) | (7U & (IData)(vlSelfRef.tbGenericVga__DOT__yReg)))] 
+                         >> (7U & ((IData)(7U) - (IData)(vlSelfRef.tbGenericVga__DOT__xReg)))))
+                      ? 0xffU : 0U);
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__updateCounter;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__state;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__timerDisp__DOT__writeIndex;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__subSeconds 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__subSeconds;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__seconds 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__seconds;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__minutes 
+        = __Vdly__tbGenericVga__DOT__dut__DOT__minutes;
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__hours = __Vdly__tbGenericVga__DOT__dut__DOT__hours;
+    vlSelfRef.green = vlSelfRef.red;
+    vlSelfRef.blue = vlSelfRef.red;
 }
 
 void VtbGenericVga___024root___eval_triggers__act(VtbGenericVga___024root* vlSelf);
@@ -246,7 +448,7 @@ bool VtbGenericVga___024root___eval_phase__act(VtbGenericVga___024root* vlSelf) 
     VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    VlTriggerVec<3> __VpreTriggered;
+    VlTriggerVec<1> __VpreTriggered;
     CData/*0:0*/ __VactExecute;
     // Body
     VtbGenericVga___024root___eval_triggers__act(vlSelf);
@@ -275,9 +477,6 @@ bool VtbGenericVga___024root___eval_phase__nba(VtbGenericVga___024root* vlSelf) 
 }
 
 #ifdef VL_DEBUG
-VL_ATTR_COLD void VtbGenericVga___024root___dump_triggers__ico(VtbGenericVga___024root* vlSelf);
-#endif  // VL_DEBUG
-#ifdef VL_DEBUG
 VL_ATTR_COLD void VtbGenericVga___024root___dump_triggers__nba(VtbGenericVga___024root* vlSelf);
 #endif  // VL_DEBUG
 #ifdef VL_DEBUG
@@ -289,28 +488,9 @@ void VtbGenericVga___024root___eval(VtbGenericVga___024root* vlSelf) {
     VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    IData/*31:0*/ __VicoIterCount;
-    CData/*0:0*/ __VicoContinue;
     IData/*31:0*/ __VnbaIterCount;
     CData/*0:0*/ __VnbaContinue;
     // Body
-    __VicoIterCount = 0U;
-    vlSelfRef.__VicoFirstIteration = 1U;
-    __VicoContinue = 1U;
-    while (__VicoContinue) {
-        if (VL_UNLIKELY(((0x64U < __VicoIterCount)))) {
-#ifdef VL_DEBUG
-            VtbGenericVga___024root___dump_triggers__ico(vlSelf);
-#endif
-            VL_FATAL_MT("tb\\tbGenericVga.v", 3, "", "Input combinational region did not converge.");
-        }
-        __VicoIterCount = ((IData)(1U) + __VicoIterCount);
-        __VicoContinue = 0U;
-        if (VtbGenericVga___024root___eval_phase__ico(vlSelf)) {
-            __VicoContinue = 1U;
-        }
-        vlSelfRef.__VicoFirstIteration = 0U;
-    }
     __VnbaIterCount = 0U;
     __VnbaContinue = 1U;
     while (__VnbaContinue) {
@@ -318,7 +498,7 @@ void VtbGenericVga___024root___eval(VtbGenericVga___024root* vlSelf) {
 #ifdef VL_DEBUG
             VtbGenericVga___024root___dump_triggers__nba(vlSelf);
 #endif
-            VL_FATAL_MT("tb\\tbGenericVga.v", 3, "", "NBA region did not converge.");
+            VL_FATAL_MT("tb\\tbGenericVga.v", 4, "", "NBA region did not converge.");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         __VnbaContinue = 0U;
@@ -329,7 +509,7 @@ void VtbGenericVga___024root___eval(VtbGenericVga___024root* vlSelf) {
 #ifdef VL_DEBUG
                 VtbGenericVga___024root___dump_triggers__act(vlSelf);
 #endif
-                VL_FATAL_MT("tb\\tbGenericVga.v", 3, "", "Active region did not converge.");
+                VL_FATAL_MT("tb\\tbGenericVga.v", 4, "", "Active region did not converge.");
             }
             vlSelfRef.__VactIterCount = ((IData)(1U) 
                                          + vlSelfRef.__VactIterCount);
