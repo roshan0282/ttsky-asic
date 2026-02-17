@@ -180,8 +180,7 @@ $$\text{inv\_det} = \frac{1}{\text{det}}, \quad\mathbf{T} = \mathbf{O} - \mathbf
 
 If $u < 0$ or $u > 1$, exit early (outside triangle).
 
-$$\mathbf{Q} = \mathbf{T} \times \mathbf{E_1}$$
-$$v = (\mathbf{D} \cdot \mathbf{Q}) \times \text{inv\_det}$$
+$$\mathbf{Q} = \mathbf{T} \times \mathbf{E_1} \rightarrow v = (\mathbf{D} \cdot \mathbf{Q}) \times \text{inv\_det}$$
 
 If $v < 0$ or $u + v > 1$, exit early (outside triangle).
 
