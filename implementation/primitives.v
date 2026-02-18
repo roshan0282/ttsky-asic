@@ -56,10 +56,32 @@ endmodule
 module fixed_point_div #(parameter WIDTH = 12) (
     input  signed [WIDTH-1:0] a,
     input  signed [WIDTH-1:0] b,
-    output signed [WIDTH-1:0] quot
+    output signed [WIDTH-1:0] quot,
+    output reg                errorFlag
 );
-    // TODO(primitives): define divide-by-zero policy (saturate/zero/error flag).
-    assign quot = (b != 0) ? ((a <<< 4) / b) : 0; // Q8.4: shift numerator by 4
+    // Check divide by zero
+    localparam MAX_POS = 20'h7FF;
+    localparam MIN_NEG = 20'h800;    
+
+    reg signed [2*WIDTH-1:0] dividend_shifted;
+
+    always @(*) begin
+        // Default assignments
+        errorFlag = 1'b0;
+        quot = 0;
+        dividedShifted = a <<< 4;
+
+        if (b == 0) begin
+            errorFlag = 1'b1;
+
+            // Saturate based on dividend sign
+            if (a >= 0)
+                quot = MAX_POS;
+            else
+                quot = MIN_NEG;
+        end else
+            quot  = dividedShifted / b
+    end
 endmodule
 
 // Fixed Point Dot Product (3D)
