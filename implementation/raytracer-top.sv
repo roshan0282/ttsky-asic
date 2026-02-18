@@ -47,17 +47,30 @@ logic signed [11:0] hitDxT, hitDyT, hitDzT;
 logic signed [11:0] normalRawX, normalRawY, normalRawZ;
 logic signed [11:0] normalX, normalY, normalZ;
 
-logic signed [11:0] lightX, lightY, lightZ;
-logic [7:0] lightColorR, lightColorG, lightColorB;
-logic signed [11:0] lightIntensity;
+logic signed [11:0] lightX [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] lightY [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] lightZ [0:SCENE_LIGHT_COUNT-1];
+logic [7:0] lightColorR [0:SCENE_LIGHT_COUNT-1];
+logic [7:0] lightColorG [0:SCENE_LIGHT_COUNT-1];
+logic [7:0] lightColorB [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] lightIntensity [0:SCENE_LIGHT_COUNT-1];
+
+logic signed [11:0] lightVecX [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] lightVecY [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] lightVecZ [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] ndotlQ [0:SCENE_LIGHT_COUNT-1];
+logic signed [11:0] diffuseQ [0:SCENE_LIGHT_COUNT-1];
+logic ndotlGt [0:SCENE_LIGHT_COUNT-1];
+logic ndotlEq [0:SCENE_LIGHT_COUNT-1];
+logic ndotlLt [0:SCENE_LIGHT_COUNT-1];
 
 integer lightIndex;
 integer accumRInt, accumGInt, accumBInt;
-integer ndotlInt;
 integer diffuseQInt;
 integer contribR, contribG, contribB;
 integer reflMix;
 integer finalR, finalG, finalB;
+genvar lightGen;
 
 function automatic [7:0] clamp8(input integer value);
 begin
@@ -196,24 +209,58 @@ fixed_vec3_normalize u_normalizeNormal (
 );
 
 always_comb begin
+    for (lightIndex = 0; lightIndex < SCENE_LIGHT_COUNT; lightIndex = lightIndex + 1) begin
+        sceneLightGet(
+            lightIndex[7:0],
+            lightX[lightIndex], lightY[lightIndex], lightZ[lightIndex],
+            lightColorR[lightIndex], lightColorG[lightIndex], lightColorB[lightIndex],
+            lightIntensity[lightIndex]
+        );
+    end
+end
+
+generate
+for (lightGen = 0; lightGen < SCENE_LIGHT_COUNT; lightGen = lightGen + 1) begin : g_lightMath
+    fixed_point_sub u_subLightVecX (
+        .a(lightX[lightGen]), .b(hitX), .diff(lightVecX[lightGen])
+    );
+    fixed_point_sub u_subLightVecY (
+        .a(lightY[lightGen]), .b(hitY), .diff(lightVecY[lightGen])
+    );
+    fixed_point_sub u_subLightVecZ (
+        .a(lightZ[lightGen]), .b(hitZ), .diff(lightVecZ[lightGen])
+    );
+
+    fixed_point_dot u_dotNdotL (
+        .ax(normalX), .ay(normalY), .az(normalZ),
+        .bx(lightVecX[lightGen]), .by(lightVecY[lightGen]), .bz(lightVecZ[lightGen]),
+        .dot(ndotlQ[lightGen])
+    );
+
+    fixed_point_compare u_cmpNdotL (
+        .a(ndotlQ[lightGen]), .b(12'sd0),
+        .gt(ndotlGt[lightGen]), .eq(ndotlEq[lightGen]), .lt(ndotlLt[lightGen])
+    );
+
+    fixed_point_mul u_mulDiffuse (
+        .a(ndotlQ[lightGen]), .b(lightIntensity[lightGen]), .prod(diffuseQ[lightGen])
+    );
+end
+endgenerate
+
+always_comb begin
     accumRInt = bestColorR >>> 3;
     accumGInt = bestColorG >>> 3;
     accumBInt = bestColorB >>> 3;
 
     for (lightIndex = 0; lightIndex < SCENE_LIGHT_COUNT; lightIndex = lightIndex + 1) begin
-        sceneLightGet(lightIndex[7:0], lightX, lightY, lightZ, lightColorR, lightColorG, lightColorB, lightIntensity);
-
-        ndotlInt = ((normalX * (lightX - hitX)) >>> 4) +
-                   ((normalY * (lightY - hitY)) >>> 4) +
-                   ((normalZ * (lightZ - hitZ)) >>> 4);
-
-        if (ndotlInt > 0) begin
-            diffuseQInt = (ndotlInt * lightIntensity) >>> 4;
+        if (ndotlGt[lightIndex]) begin
+            diffuseQInt = diffuseQ[lightIndex];
             if (diffuseQInt > 16) diffuseQInt = 16;
 
-            contribR = (((bestColorR * lightColorR) >> 8) * diffuseQInt) >> 4;
-            contribG = (((bestColorG * lightColorG) >> 8) * diffuseQInt) >> 4;
-            contribB = (((bestColorB * lightColorB) >> 8) * diffuseQInt) >> 4;
+            contribR = (((bestColorR * lightColorR[lightIndex]) >> 8) * diffuseQInt) >> 4;
+            contribG = (((bestColorG * lightColorG[lightIndex]) >> 8) * diffuseQInt) >> 4;
+            contribB = (((bestColorB * lightColorB[lightIndex]) >> 8) * diffuseQInt) >> 4;
 
             accumRInt = accumRInt + contribR;
             accumGInt = accumGInt + contribG;
