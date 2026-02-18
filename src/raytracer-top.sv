@@ -257,9 +257,9 @@ always_comb begin
     finalR      = '0;
     finalG      = '0;
     finalB      = '0;
-    red         = '0;
-    green       = '0;
-    blue        = '0;
+    rgb_r         = '0;
+    rgb_g       = '0;
+    rgb_b        = '0;
     accumRInt = bestColorR >>> 3;
     accumGInt = bestColorG >>> 3;
     accumBInt = bestColorB >>> 3;
