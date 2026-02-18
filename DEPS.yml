@@ -1,0 +1,7 @@
+# DEPS.yml - Dependencies configuration for vector normalizer testbench
+
+vec3_normalize_test:
+  deps:
+    - primitives/fixed_vec3_normalize.v
+    - primitives/tb_fixed_vec3_normalize.sv
+  top: tb_fixed_vec3_normalize

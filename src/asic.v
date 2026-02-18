@@ -2,20 +2,19 @@ module asic(
     input [7:0] in,
     output [7:0] out
 );
-wire [9:0] xOrd;
-wire [9:0] yOrd;
+
 wire [7:0] red, green, blue;
 
-timerCore core (
-    .clk(1'b0),
-    .rst_n(1'b1),
-    .xOrd(10'd523),
-    .yOrd(10'd187),
-    .visible(1'b1),
-    .red(red),
-    .green(green),
-    .blue(blue)
+raytracer_top tracer0(
+    .clk(in[0]),
+    .rst_n(in[1]),
+    .pixel_x({10{in[2]}}),
+    .pixel_y({10{in[3]}}),
+    .pixel_valid(in[4]),
+    .rgb_r(red),
+    .rgb_g(green),
+    .rgb_b(blue)
 );
 
-assign out [7:4] = xOrd [3:0];
+assign out = red & green & blue;
 endmodule
