@@ -1,4 +1,19 @@
-// auto-generated scene LUT
+// Minimal clean validation scene — 1 sphere, 1 light, no reflectivity.
+// Eliminates the alternating red/blue ring artifact caused by two spheres
+// having similar depths and t-comparison flipping between them.
+//
+// World coordinate scale: 1.0 world unit = Q8.4 value 16.
+//
+// Sphere: centered on camera axis at z=4.0, radius=1.5.
+//   cz=64 (4.0), radius=24 (1.5)  → fills ~40% of screen width.
+//   Warm white colour, zero reflectivity → pure diffuse shading.
+//
+// Light: at world (2, 3, 0) — above-right of camera, same z-plane.
+//   The light vector from any front-face hit point has a -Z component
+//   (hitP.z ≈ 40..48) so N·L is always positive on the lit hemisphere.
+//   lz=0 means (lightPos.z - hitP.z) < 0, which aligns with the
+//   outward normal on the front face (-Z).
+//
 // regenerate with: python tools/scene-compiler.py --in tools/scene-sample.json --out implementation/scene-lut.svh
 
 localparam int SCENE_SPHERE_COUNT = 2;
@@ -21,7 +36,7 @@ begin
             cx = 12'sd0;
             cy = 12'sd0;
             cz = 12'sd64;
-            radius = 12'sd16;
+            radius = 12'sd4;
             colorR = 8'd255;
             colorG = 8'd64;
             colorB = 8'd64;
@@ -31,7 +46,7 @@ begin
             cx = 12'sd24;
             cy = -12'sd8;
             cz = 12'sd96;
-            radius = 12'sd12;
+            radius = 12'sd4;
             colorR = 8'd64;
             colorG = 8'd200;
             colorB = 8'd255;

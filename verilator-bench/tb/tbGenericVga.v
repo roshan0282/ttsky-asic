@@ -66,11 +66,11 @@ module tbGenericVga(
     `endif
         .clk(clock50MHz),
         .rst_n(resetn),
-        .xOrd(xReg),
-        .yOrd(yReg),
-        .visible(visibleReg),
-        .red(red),
-        .green(green),
-        .blue(blue)
+        .pixel_x(xReg),
+        .pixel_y(yReg),
+        .pixel_valid(visibleReg),
+        .rgb_r(red),
+        .rgb_g(green),
+        .rgb_b(blue)
     );
 endmodule
