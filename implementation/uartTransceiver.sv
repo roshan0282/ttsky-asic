@@ -1,35 +1,31 @@
 module uartTransceiver #(
     parameter CLK_FREQ  = 50_000_000,
     parameter BAUD_RATE = 115200,
-    parameter WIDTH     = 8,
-    parameter PARITY    = 1          // 0=None, 1=Even, 2=Odd
+    parameter WIDTH     = 8
 )(
     input  logic             clk,
     input  logic             resetn,
     
     // Transmitter interface
-    input  logic [WIDTH-1:0] txDataIn,      // Parallel data to transmit
-    input  logic             txStart,       // Pulse high to start transmission
-    output logic             txBusy,        // High while transmitting
-    output logic             txDone,        // Pulses high when transmission complete
+    input  logic [WIDTH-1:0] txDataIn,
+    input  logic             txStart,
+    output logic             txBusy,
+    output logic             txDone,
     
     // Receiver interface
-    output logic [WIDTH-1:0] rxDataOut,     // Parallel received data
-    output logic             rxValid,       // Pulses high when byte received
-    output logic             rxBusy,        // High while receiving
-    output logic             rxParityError, // High when parity error detected
+    output logic [WIDTH-1:0] rxDataOut,
+    output logic             rxValid,
+    output logic             rxBusy,
     
     // Serial interface
-    input  logic             uartRx,        // Serial line in
-    output logic             uartTx         // Serial line out
+    input  logic             uartRx,
+    output logic             uartTx
 );
 
-    // Instantiate UART Transmitter
     uartTransmitter #(
         .CLK_FREQ(CLK_FREQ),
         .BAUD_RATE(BAUD_RATE),
-        .WIDTH(WIDTH),
-        .PARITY(PARITY)
+        .WIDTH(WIDTH)
     ) transmitter_inst (
         .clk(clk),
         .resetn(resetn),
@@ -40,20 +36,17 @@ module uartTransceiver #(
         .txDone(txDone)
     );
 
-    // Instantiate UART Receiver
     uartReceiver #(
         .CLK_FREQ(CLK_FREQ),
         .BAUD_RATE(BAUD_RATE),
-        .WIDTH(WIDTH),
-        .PARITY(PARITY)
+        .WIDTH(WIDTH)
     ) receiver_inst (
         .clk(clk),
         .resetn(resetn),
         .uartRx(uartRx),
         .dataOut(rxDataOut),
         .dataValid(rxValid),
-        .rxBusy(rxBusy),
-        .parityError(rxParityError)
+        .rxBusy(rxBusy)
     );
 
 endmodule
