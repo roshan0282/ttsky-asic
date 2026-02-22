@@ -14,38 +14,6 @@
 `timescale 1ns/1ps
 `default_nettype none
 
-package scene_lut;
-    // Scene counts
-    localparam NUM_SPHERES = 4;
-    localparam NUM_LIGHTS  = 2;
-
-    typedef struct packed {
-        logic signed [31:0] cx, cy, cz;
-        logic signed [31:0] radius;
-        logic [7:0] colorR, colorG, colorB;
-        logic signed [31:0] reflectivity;
-    } sphere_t;
-
-    typedef struct packed {
-        logic signed [31:0] lx, ly, lz;
-        logic [7:0] colorR, colorG, colorB;
-        logic signed [31:0] intensity;
-    } light_t;
-
-    // Table-driven scene data (update this section only)
-    localparam sphere_t SPHERES [0:NUM_SPHERES-1] = '{
-        '{ cx:-32'sd114688 , cy:32'sd0       , cz:32'sd393216 , radius:32'sd98304  , colorR:8'd255, colorG:8'd80 , colorB:8'd60 , reflectivity:32'sd42598   },
-        '{ cx:32'sd114688  , cy:32'sd0       , cz:32'sd393216 , radius:32'sd98304  , colorR:8'd60 , colorG:8'd160, colorB:8'd255, reflectivity:32'sd42598   },
-        '{ cx:32'sd0       , cy:-32'sd262144 , cz:32'sd425984 , radius:32'sd196608 , colorR:8'd220, colorG:8'd220, colorB:8'd220, reflectivity:32'sd9830    },
-        '{ cx:32'sd72367   , cy:32'sd0       , cz:32'sd746135 , radius:32'sd65536  , colorR:8'd17 , colorG:8'd255, colorB:8'd0  , reflectivity:32'sd32768   }
-    };
-
-    localparam light_t LIGHTS [0:NUM_LIGHTS-1] = '{
-        '{ lx:32'sd0      , ly:32'sd16079   , lz:32'sd556734 , colorR:8'd255, colorG:8'd153, colorB:8'd0  , intensity:32'sd98304   },
-        '{ lx:32'sd0      , ly:32'sd191576  , lz:32'sd239270 , colorR:8'd238, colorG:8'd255, colorB:8'd0  , intensity:32'sd65536   }
-    };
-
-endpackage
 
 module raytracer_top (
     input  logic        clk,
@@ -61,8 +29,8 @@ module raytracer_top (
     output logic        output_valid
 );
 
-    localparam int NUM_SPHERES     = scene_lut::NUM_SPHERES;
-    localparam int NUM_LIGHTS      = scene_lut::NUM_LIGHTS;
+    localparam int NUM_SPHERES     = 16;
+    localparam int NUM_LIGHTS      = 16;
     localparam int MAX_BOUNCES     = 4;
     localparam int MAX_ITERATIONS  = 8;
     localparam logic signed [31:0] Q16_ONE = 32'sd65536;
@@ -81,14 +49,14 @@ module raytracer_top (
 
     always_comb begin
         for (int i = 0; i < NUM_SPHERES; i++) begin
-            cx_arr[i] = scene_lut::SPHERES[i].cx;
-            cy_arr[i] = scene_lut::SPHERES[i].cy;
-            cz_arr[i] = scene_lut::SPHERES[i].cz;
-            radius_arr[i] = scene_lut::SPHERES[i].radius;
-            colorR_arr[i] = scene_lut::SPHERES[i].colorR;
-            colorG_arr[i] = scene_lut::SPHERES[i].colorG;
-            colorB_arr[i] = scene_lut::SPHERES[i].colorB;
-            refl_arr[i] = scene_lut::SPHERES[i].reflectivity;
+            cx_arr[i] = 32'b0;
+            cy_arr[i] = 32'b0;
+            cz_arr[i] = 32'b0;
+            radius_arr[i] = 32'b0;
+            colorR_arr[i] = 8'b0;
+            colorG_arr[i] = 8'b0;
+            colorB_arr[i] = 8'b0;
+            refl_arr[i] = 32'b0;
         end
     end
 
@@ -364,13 +332,13 @@ module raytracer_top (
                     break;
                 end
 
-                light_x = scene_lut::LIGHTS[li].lx;
-                light_y = scene_lut::LIGHTS[li].ly;
-                light_z = scene_lut::LIGHTS[li].lz;
-                light_colorR = scene_lut::LIGHTS[li].colorR;
-                light_colorG = scene_lut::LIGHTS[li].colorG;
-                light_colorB = scene_lut::LIGHTS[li].colorB;
-                light_intensity = scene_lut::LIGHTS[li].intensity;
+                light_x = 32'b0;
+                light_y = 32'b0;
+                light_z = 32'b0;
+                light_colorR = 8'b0;
+                light_colorG = 8'b0;
+                light_colorB = 8'b0;
+                light_intensity = 32'b0;
 
                 to_light_x = light_x - hit_x;
                 to_light_y = light_y - hit_y;
