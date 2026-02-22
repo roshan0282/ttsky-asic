@@ -9,14 +9,9 @@ jobs:
         with:
           submodules: recursive
 
-      # - name: Install iverilog
-      #   shell: bash
-      #   run: sudo apt-get update && sudo apt-get install -y iverilog
-      - name: Install Verilator pre-built binary
-        run: |
-          wget https://github.com/verilator/verilator/releases/tag/v5.036
-          sudo dpkg -i verilator_5.036_ubuntu22.04_amd64.deb
-          verilator --version
+      - name: Install iverilog
+        shell: bash
+        run: sudo apt-get update && sudo apt-get install -y iverilog
 
       # Set Python up and install cocotb
       - name: Setup python
