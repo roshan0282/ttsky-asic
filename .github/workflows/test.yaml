@@ -12,9 +12,16 @@ jobs:
       # - name: Install iverilog
       #   shell: bash
       #   run: sudo apt-get update && sudo apt-get install -y iverilog
-      - name: Install Verilator
+      - name: Install Verilator from source
         run: |
-          sudo apt-get update && sudo apt-get install -y verilator
+          sudo apt-get update && sudo apt-get install -y git autoconf flex bison libfl-dev
+          git clone https://github.com/verilator/verilator
+          cd verilator
+          git checkout v5.036
+          autoconf
+          ./configure
+          make -j$(nproc)
+          sudo make install
 
       # Set Python up and install cocotb
       - name: Setup python
