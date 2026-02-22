@@ -57,8 +57,8 @@ module uartReceiver_tb;
 
     // State monitor - prints every clock cycle
     always @(posedge clk) begin
-            $display("t=%0t | state=%0d | nextState=%0d | baudCounter=%0d | baudTick=%b | sync2=%b | bitCounter=%0d | rxShiftReg=%b | dataOut=%b | dataValid=%b",
-                $time, dut.state, dut.nextState, dut.baudCounter, dut.baudTick, dut.uartRx_sync2, dut.bitCounter, dut.rxShiftReg, dut.dataOut, dut.dataValid);
+            $display("t=%0t | state=%0d | nextState=%0d | baudCounter=%0d | baudTick=%b | sync2=%b | bitCounter=%0d | dataOut=%b | dataValid=%b",
+                $time, dut.state, dut.nextState, dut.baudCounter, dut.baudTick, dut.uartRx_sync2, dut.bitCounter, dut.dataOut, dut.dataValid);
     end
 
     // Main test sequence
@@ -83,7 +83,7 @@ module uartReceiver_tb;
 
     // Timeout watchdog
     initial begin
-        #(BAUD_PERIOD * 8);
+        #(BAUD_PERIOD * 11);
         $display("TIMEOUT: Testbench exceeded max time");
         $finish;
     end

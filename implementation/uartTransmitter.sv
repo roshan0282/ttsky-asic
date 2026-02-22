@@ -56,7 +56,7 @@ module uartTransmitter #(
     always_comb begin
         nextState = state;
         case (state)
-            IDLE:      if (dataValid)                          nextState = START_BIT;
+            IDLE:      if (dataValid)                         nextState = START_BIT;
             START_BIT: if (baudTick)                          nextState = DATA_BITS;
             DATA_BITS: if (baudTick && bitCounter == 3'd7)    nextState = STOP_BIT;
             STOP_BIT:  if (baudTick)                          nextState = TX_DONE;

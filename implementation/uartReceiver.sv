@@ -95,15 +95,8 @@ module uartReceiver #(
         end
     end
 
-    // Delay dataValid by one cycle
-    logic dataValid_r;
-    always_ff @(posedge clk or negedge resetn) begin
-        if (!resetn) dataValid_r <= 1'b0;
-        else         dataValid_r <= (state == BYTE_DONE);
-    end
-
     assign dataOut  = rxShiftReg[WIDTH-1:0];
-    assign dataValid = dataValid_r;
+    assign dataValid = (state == BYTE_DONE);
     assign rxBusy   = (state != IDLE);
 
 endmodule
