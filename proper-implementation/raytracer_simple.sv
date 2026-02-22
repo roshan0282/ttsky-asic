@@ -7,7 +7,7 @@
 //
 // Features:
 //  - Q16.16 math throughout
-//  - shadow ray test (1 light, 3 spheres)
+//  - shadow ray test (multi-light, 3 spheres)
 //  - up to 4 bounces, MAX_ITERATIONS budget like C++
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -30,7 +30,8 @@ module raytracer_simple (
     output logic        output_valid
 );
 
-    localparam int NUM_SPHERES     = 3;
+    localparam int NUM_SPHERES     = scene_lut::NUM_SPHERES;
+    localparam int NUM_LIGHTS      = scene_lut::NUM_LIGHTS;
     localparam int MAX_BOUNCES     = 4;
     localparam int MAX_ITERATIONS  = 8;
     localparam logic signed [31:0] Q16_ONE = 32'sd65536;
@@ -47,21 +48,17 @@ module raytracer_simple (
     logic [7:0]  colorB_arr [0:NUM_SPHERES-1];
     logic signed [31:0] refl_arr [0:NUM_SPHERES-1];
 
-    logic signed [31:0] light_x, light_y, light_z;
-    logic [7:0] light_colorR, light_colorG, light_colorB;
-    logic signed [31:0] light_intensity;
-
     always_comb begin
-        getSphere0(cx_arr[0], cy_arr[0], cz_arr[0], radius_arr[0],
-                   colorR_arr[0], colorG_arr[0], colorB_arr[0], refl_arr[0]);
-        getSphere1(cx_arr[1], cy_arr[1], cz_arr[1], radius_arr[1],
-                   colorR_arr[1], colorG_arr[1], colorB_arr[1], refl_arr[1]);
-        getSphere2(cx_arr[2], cy_arr[2], cz_arr[2], radius_arr[2],
-                   colorR_arr[2], colorG_arr[2], colorB_arr[2], refl_arr[2]);
-
-        getLight0(light_x, light_y, light_z,
-                  light_colorR, light_colorG, light_colorB,
-                  light_intensity);
+        for (int i = 0; i < NUM_SPHERES; i++) begin
+            cx_arr[i] = scene_lut::SPHERES[i].cx;
+            cy_arr[i] = scene_lut::SPHERES[i].cy;
+            cz_arr[i] = scene_lut::SPHERES[i].cz;
+            radius_arr[i] = scene_lut::SPHERES[i].radius;
+            colorR_arr[i] = scene_lut::SPHERES[i].colorR;
+            colorG_arr[i] = scene_lut::SPHERES[i].colorG;
+            colorB_arr[i] = scene_lut::SPHERES[i].colorB;
+            refl_arr[i] = scene_lut::SPHERES[i].reflectivity;
+        end
     end
 
     // ── Q16 helpers ───────────────────────────────────────────────────────────
@@ -249,6 +246,9 @@ module raytracer_simple (
         logic signed [31:0] ldir_x, ldir_y, ldir_z;
         logic signed [31:0] ndotl;
         logic signed [31:0] dist_to_light;
+        logic signed [31:0] light_x, light_y, light_z;
+        logic signed [31:0] light_intensity;
+        logic [7:0] light_colorR, light_colorG, light_colorB;
 
         logic signed [31:0] shad_ox, shad_oy, shad_oz;
         logic in_shadow;
@@ -328,60 +328,74 @@ module raytracer_simple (
             shade_g_i = int'(colorG_arr[nearest_idx]) >>> 3;
             shade_b_i = int'(colorB_arr[nearest_idx]) >>> 3;
 
-            to_light_x = light_x - hit_x;
-            to_light_y = light_y - hit_y;
-            to_light_z = light_z - hit_z;
-            dist_to_light = q16_sqrt_fn(q16_dot3_fn(to_light_x, to_light_y, to_light_z,
-                                                    to_light_x, to_light_y, to_light_z));
-            normalize3_task(to_light_x, to_light_y, to_light_z, ldir_x, ldir_y, ldir_z);
-            ndotl = q16_dot3_fn(norm_x, norm_y, norm_z, ldir_x, ldir_y, ldir_z);
-
-            in_shadow = 1'b0;
-            if (ndotl > 32'sd0) begin
-                eps_nx = q16_mul_fn(norm_x, Q16_EPS);
-                eps_ny = q16_mul_fn(norm_y, Q16_EPS);
-                eps_nz = q16_mul_fn(norm_z, Q16_EPS);
-
-                shad_ox = hit_x + eps_nx;
-                shad_oy = hit_y + eps_ny;
-                shad_oz = hit_z + eps_nz;
-
-                for (int si2 = 0; si2 < NUM_SPHERES; si2++) begin
-                    if (iter_i >= MAX_ITERATIONS) begin
-                        break;
-                    end
-
-                    iter_i = iter_i + 1;
-
-                    ray_sphere_task(shad_ox, shad_oy, shad_oz,
-                                    ldir_x, ldir_y, ldir_z,
-                                    cx_arr[si2], cy_arr[si2], cz_arr[si2], radius_arr[si2],
-                                    hit_tmp, t_tmp);
-
-                    if (hit_tmp && t_tmp > 32'sd0 && t_tmp < dist_to_light) begin
-                        in_shadow = 1'b1;
-                        break;
-                    end
+            for (int li = 0; li < NUM_LIGHTS; li++) begin
+                if (iter_i >= MAX_ITERATIONS) begin
+                    break;
                 end
 
-                if (!in_shadow) begin
-                    difQInt_i = (q16_mul_fn(ndotl, light_intensity)) >>> 12;
-                    if (difQInt_i > 16) begin
-                        difQInt_i = 16;
-                    end
-                    if (difQInt_i < 0) begin
-                        difQInt_i = 0;
+                light_x = scene_lut::LIGHTS[li].lx;
+                light_y = scene_lut::LIGHTS[li].ly;
+                light_z = scene_lut::LIGHTS[li].lz;
+                light_colorR = scene_lut::LIGHTS[li].colorR;
+                light_colorG = scene_lut::LIGHTS[li].colorG;
+                light_colorB = scene_lut::LIGHTS[li].colorB;
+                light_intensity = scene_lut::LIGHTS[li].intensity;
+
+                to_light_x = light_x - hit_x;
+                to_light_y = light_y - hit_y;
+                to_light_z = light_z - hit_z;
+                dist_to_light = q16_sqrt_fn(q16_dot3_fn(to_light_x, to_light_y, to_light_z,
+                                                        to_light_x, to_light_y, to_light_z));
+                normalize3_task(to_light_x, to_light_y, to_light_z, ldir_x, ldir_y, ldir_z);
+                ndotl = q16_dot3_fn(norm_x, norm_y, norm_z, ldir_x, ldir_y, ldir_z);
+
+                in_shadow = 1'b0;
+                if (ndotl > 32'sd0) begin
+                    eps_nx = q16_mul_fn(norm_x, Q16_EPS);
+                    eps_ny = q16_mul_fn(norm_y, Q16_EPS);
+                    eps_nz = q16_mul_fn(norm_z, Q16_EPS);
+
+                    shad_ox = hit_x + eps_nx;
+                    shad_oy = hit_y + eps_ny;
+                    shad_oz = hit_z + eps_nz;
+
+                    for (int si2 = 0; si2 < NUM_SPHERES; si2++) begin
+                        if (iter_i >= MAX_ITERATIONS) begin
+                            break;
+                        end
+
+                        iter_i = iter_i + 1;
+
+                        ray_sphere_task(shad_ox, shad_oy, shad_oz,
+                                        ldir_x, ldir_y, ldir_z,
+                                        cx_arr[si2], cy_arr[si2], cz_arr[si2], radius_arr[si2],
+                                        hit_tmp, t_tmp);
+
+                        if (hit_tmp && t_tmp > 32'sd0 && t_tmp < dist_to_light) begin
+                            in_shadow = 1'b1;
+                            break;
+                        end
                     end
 
-                    shade_r_i = shade_r_i
-                              + ((((int'(colorR_arr[nearest_idx]) * int'(light_colorR)) >>> 8)
-                                   * difQInt_i) >>> 4);
-                    shade_g_i = shade_g_i
-                              + ((((int'(colorG_arr[nearest_idx]) * int'(light_colorG)) >>> 8)
-                                   * difQInt_i) >>> 4);
-                    shade_b_i = shade_b_i
-                              + ((((int'(colorB_arr[nearest_idx]) * int'(light_colorB)) >>> 8)
-                                   * difQInt_i) >>> 4);
+                    if (!in_shadow) begin
+                        difQInt_i = (q16_mul_fn(ndotl, light_intensity)) >>> 12;
+                        if (difQInt_i > 16) begin
+                            difQInt_i = 16;
+                        end
+                        if (difQInt_i < 0) begin
+                            difQInt_i = 0;
+                        end
+
+                        shade_r_i = shade_r_i
+                                  + ((((int'(colorR_arr[nearest_idx]) * int'(light_colorR)) >>> 8)
+                                       * difQInt_i) >>> 4);
+                        shade_g_i = shade_g_i
+                                  + ((((int'(colorG_arr[nearest_idx]) * int'(light_colorG)) >>> 8)
+                                       * difQInt_i) >>> 4);
+                        shade_b_i = shade_b_i
+                                  + ((((int'(colorB_arr[nearest_idx]) * int'(light_colorB)) >>> 8)
+                                       * difQInt_i) >>> 4);
+                    end
                 end
             end
 

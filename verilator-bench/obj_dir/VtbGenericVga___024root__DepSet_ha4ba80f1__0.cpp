@@ -42,3 +42,6550 @@ void VtbGenericVga___024root___eval_triggers__act(VtbGenericVga___024root* vlSel
     }
 #endif
 }
+
+VL_INLINE_OPT void VtbGenericVga___024root___nba_sequent__TOP__0(VtbGenericVga___024root* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VtbGenericVga___024root___nba_sequent__TOP__0\n"); );
+    VtbGenericVga__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Init
+    CData/*0:0*/ tbGenericVga__DOT__dut__DOT__output_valid;
+    tbGenericVga__DOT__dut__DOT__output_valid = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dx;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dx = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dy;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dy = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_x;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_x = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_y;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_y = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_r_i;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_r_i = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_g_i;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_g_i = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i = 0;
+    IData/*31:0*/ tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__bounce;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__bounce = 0;
+    IData/*31:0*/ __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__x;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__x = 0;
+    IData/*31:0*/ __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__y;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__y = 0;
+    IData/*31:0*/ __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__z;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__z = 0;
+    IData/*31:0*/ __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag2;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag2 = 0;
+    IData/*31:0*/ __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__Vfuncout = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ax;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ax = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ay;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ay = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__bx;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__bx = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__by;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__by = 0;
+    QData/*63:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__px;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__px = 0;
+    QData/*63:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__py;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__py = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__a;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__a = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__unnamedblk2__DOT__i = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0;
+    CData/*7:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__Vfuncout = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__v;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__v = 0;
+    CData/*7:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__Vfuncout = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__v;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__v = 0;
+    CData/*7:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__Vfuncout = 0;
+    IData/*31:0*/ __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__v;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__v = 0;
+    SData/*9:0*/ __Vdly__tbGenericVga__DOT__yReg;
+    __Vdly__tbGenericVga__DOT__yReg = 0;
+    SData/*9:0*/ __Vdly__tbGenericVga__DOT__xReg;
+    __Vdly__tbGenericVga__DOT__xReg = 0;
+    // Body
+    __Vdly__tbGenericVga__DOT__yReg = vlSelfRef.tbGenericVga__DOT__yReg;
+    __Vdly__tbGenericVga__DOT__xReg = vlSelfRef.tbGenericVga__DOT__xReg;
+    if (vlSelfRef.resetn) {
+        if ((0x31fU == (IData)(vlSelfRef.tbGenericVga__DOT__xReg))) {
+            __Vdly__tbGenericVga__DOT__yReg = ((0x20cU 
+                                                == (IData)(vlSelfRef.tbGenericVga__DOT__yReg))
+                                                ? 0U
+                                                : (0x3ffU 
+                                                   & ((IData)(1U) 
+                                                      + (IData)(vlSelfRef.tbGenericVga__DOT__yReg))));
+            __Vdly__tbGenericVga__DOT__xReg = 0U;
+        } else {
+            __Vdly__tbGenericVga__DOT__xReg = (0x3ffU 
+                                               & ((IData)(1U) 
+                                                  + (IData)(vlSelfRef.tbGenericVga__DOT__xReg)));
+        }
+        vlSelfRef.tbGenericVga__DOT__hSyncReg = (1U 
+                                                 & (~ 
+                                                    ((0x290U 
+                                                      <= (IData)(vlSelfRef.tbGenericVga__DOT__xReg)) 
+                                                     & (0x2f0U 
+                                                        > (IData)(vlSelfRef.tbGenericVga__DOT__xReg)))));
+        vlSelfRef.tbGenericVga__DOT__vSyncReg = (1U 
+                                                 & (~ 
+                                                    ((0x1eaU 
+                                                      <= (IData)(vlSelfRef.tbGenericVga__DOT__yReg)) 
+                                                     & (0x1ecU 
+                                                        > (IData)(vlSelfRef.tbGenericVga__DOT__yReg)))));
+        vlSelfRef.tbGenericVga__DOT__visibleReg = (
+                                                   (0x280U 
+                                                    > (IData)(vlSelfRef.tbGenericVga__DOT__xReg)) 
+                                                   & (0x1e0U 
+                                                      > (IData)(vlSelfRef.tbGenericVga__DOT__yReg)));
+        vlSelfRef.tbGenericVga__DOT__yReg = __Vdly__tbGenericVga__DOT__yReg;
+        vlSelfRef.tbGenericVga__DOT__xReg = __Vdly__tbGenericVga__DOT__xReg;
+        vlSelfRef.hSync = vlSelfRef.tbGenericVga__DOT__hSyncReg;
+        vlSelfRef.vSync = vlSelfRef.tbGenericVga__DOT__vSyncReg;
+        vlSelfRef.visible = vlSelfRef.tbGenericVga__DOT__visibleReg;
+        tbGenericVga__DOT__dut__DOT__output_valid = vlSelfRef.tbGenericVga__DOT__visibleReg;
+    } else {
+        __Vdly__tbGenericVga__DOT__yReg = 0U;
+        __Vdly__tbGenericVga__DOT__xReg = 0U;
+        vlSelfRef.tbGenericVga__DOT__hSyncReg = 1U;
+        vlSelfRef.tbGenericVga__DOT__vSyncReg = 1U;
+        vlSelfRef.tbGenericVga__DOT__visibleReg = 0U;
+        vlSelfRef.tbGenericVga__DOT__yReg = __Vdly__tbGenericVga__DOT__yReg;
+        vlSelfRef.tbGenericVga__DOT__xReg = __Vdly__tbGenericVga__DOT__xReg;
+        vlSelfRef.hSync = vlSelfRef.tbGenericVga__DOT__hSyncReg;
+        vlSelfRef.vSync = vlSelfRef.tbGenericVga__DOT__vSyncReg;
+        vlSelfRef.visible = vlSelfRef.tbGenericVga__DOT__visibleReg;
+        tbGenericVga__DOT__dut__DOT__output_valid = 0U;
+    }
+    vlSelfRef.yOrd = vlSelfRef.tbGenericVga__DOT__yReg;
+    vlSelfRef.xOrd = vlSelfRef.tbGenericVga__DOT__xReg;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_x 
+        = (VL_EXTENDS_II(32,11, (IData)(vlSelfRef.tbGenericVga__DOT__xReg)) 
+           - (IData)(0x140U));
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_y 
+        = ((IData)(0xf0U) - VL_EXTENDS_II(32,10, (0x1ffU 
+                                                  & (IData)(vlSelfRef.tbGenericVga__DOT__yReg))));
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dx 
+        = VL_SHIFTL_III(32,32,32, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_x, 0xeU);
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dy 
+        = VL_SHIFTL_III(32,32,32, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__centered_y, 0xeU);
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__z = 0x640000U;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__y 
+        = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dy;
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__x 
+        = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__raw_dx;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__by 
+        = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__y;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__bx 
+        = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__x;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ay 
+        = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__y;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ax 
+        = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__x;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__px 
+        = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                               VL_EXTENDS_QI(64,32, __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ax), 
+                                               VL_EXTENDS_QI(64,32, __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__bx)), 0x10U);
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__py 
+        = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                               VL_EXTENDS_QI(64,32, __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__ay), 
+                                               VL_EXTENDS_QI(64,32, __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__by)), 0x10U);
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__Vfuncout 
+        = ((IData)(0x27100000U) + ((IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__px) 
+                                   + (IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__py)));
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag2 
+        = __Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__1__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__a 
+        = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag2;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__unnamedblk2__DOT__i = 0;
+    const uint64_t __VscopeHash = VL_MURMUR64_HASH(vlSelf->name());
+    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7749147354708975561ull);
+    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 3383025464935046932ull);
+    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 18010343053661476024ull);
+    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 1584628287436773231ull);
+    if (VL_GTES_III(32, 0U, __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__a)) {
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__Vfuncout = 0U;
+    } else {
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v 
+            = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__a)), 0x10U);
+        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__unnamedblk2__DOT__i = 0xffffffffU;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r = 0ULL;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x2eU));
+        if ((1ULL <= vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem)) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x2cU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x2aU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x28U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x26U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x24U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x22U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x20U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x1eU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x1cU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x1aU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x18U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x16U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x14U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x12U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0x10U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0xeU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0xcU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 0xaU)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 8U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 6U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 4U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v, 2U)));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem, 2U) 
+               | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__v));
+        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)))) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__rem 
+                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 2U)));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U));
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r 
+                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r, 1U);
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__result 
+            = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__r);
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__Vfuncout 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__result;
+    }
+    __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag 
+        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__2__Vfuncout;
+    if (VL_GTES_III(32, 0U, __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag)) {
+        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__nx = 0U;
+        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__ny = 0U;
+        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__nz = 0U;
+    } else {
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__b 
+            = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__a 
+            = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__x;
+        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10901409471592274793ull);
+        if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__b)) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__quotient 
+                = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__a)
+                    ? 0x7fffffffU : 0x80000001U);
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__dividend_shifted 
+                = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__a), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__quotient 
+                = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__dividend_shifted, 
+                                      VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__b)));
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__Vfuncout 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__quotient;
+        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__nx 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__3__Vfuncout;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__b 
+            = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__a 
+            = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__y;
+        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12299374254074035648ull);
+        if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__b)) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__quotient 
+                = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__a)
+                    ? 0x7fffffffU : 0x80000001U);
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__dividend_shifted 
+                = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__a), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__quotient 
+                = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__dividend_shifted, 
+                                      VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__b)));
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__Vfuncout 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__quotient;
+        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__ny 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__4__Vfuncout;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__b 
+            = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__mag;
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__a 
+            = __Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__z;
+        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15116362381487509189ull);
+        if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__b)) {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__quotient 
+                = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__a)
+                    ? 0x7fffffffU : 0x80000001U);
+        } else {
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__dividend_shifted 
+                = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__a), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__quotient 
+                = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__dividend_shifted, 
+                                      VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__b)));
+        }
+        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__Vfuncout 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__quotient;
+        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__nz 
+            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__5__Vfuncout;
+    }
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx 
+        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__nx;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy 
+        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__ny;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz 
+        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__0__nz;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_r_i = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_g_i = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i = 0x10U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i = 0U;
+    tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__bounce = 0U;
+    {
+        while (VL_GTS_III(32, 4U, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__bounce)) {
+            if (VL_LTES_III(32, 8U, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i)) {
+                goto __Vlabel0;
+            }
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i 
+                = ((IData)(1U) + tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit = 0U;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t = 0x7fffffffU;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx = 0xffffffffU;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__radius_arr
+                [0U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cz_arr
+                [0U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cy_arr
+                [0U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cx_arr
+                [0U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox;
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13519907935916760914ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17523829047098598706ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6915133971940441336ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14218462539269401883ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7012966815262966393ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 521890057122423930ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 16138844365731735133ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7387013646017423878ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6769720365909642936ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 2487846061763008048ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13634344056869749502ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 1665804993324467915ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13581492113469855127ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7520616662362216257ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 9691310121070699475ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 667890717561891415ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4781647130674193867ull);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12196412921061641084ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5933339789773403821ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10578439553585465275ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1540603157582217177ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4497827452605074920ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10021609631861176901ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7261352059422220269ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9077533236546090554ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7702554106008646789ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10007237644158570048ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6086773517563338917ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14315233641963922863ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4593595283430268387ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14119971580838982106ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16393708724324570617ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 0U;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t = 0U;
+            if ((VL_LTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc) 
+                 & (0U != vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a))) {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc;
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14374967724556748228ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17924636325012253993ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12509334236639195211ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14463605751598722379ull);
+                if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout = 0U;
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v 
+                        = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = 0ULL;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = 0ULL;
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x17U;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x16U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x15U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x14U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x28U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x13U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x26U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x12U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x24U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x11U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x22U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x10U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x20U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xfU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xeU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xdU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xcU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x18U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xbU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x16U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xaU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x14U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 9U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x12U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 8U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x10U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 7U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xeU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 6U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xcU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 5U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xaU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 4U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 8U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 3U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 6U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 2U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 4U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 1U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 2U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v));
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xffffffffU;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result 
+                        = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result;
+                }
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                    = (- vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       + vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9186225828396251093ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7626581654461332152ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1853082831608623690ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4867832585039069791ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout;
+                if ((VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0) 
+                     & VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1))) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = (VL_LTS_III(32, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)
+                            ? vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0
+                            : vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1);
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0;
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1;
+                }
+            }
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__radius_arr
+                [1U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cz_arr
+                [1U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cy_arr
+                [1U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cx_arr
+                [1U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox;
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13519907935916760914ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17523829047098598706ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6915133971940441336ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14218462539269401883ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7012966815262966393ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 521890057122423930ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 16138844365731735133ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7387013646017423878ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6769720365909642936ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 2487846061763008048ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13634344056869749502ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 1665804993324467915ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13581492113469855127ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7520616662362216257ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 9691310121070699475ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 667890717561891415ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4781647130674193867ull);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12196412921061641084ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5933339789773403821ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10578439553585465275ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1540603157582217177ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4497827452605074920ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10021609631861176901ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7261352059422220269ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9077533236546090554ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7702554106008646789ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10007237644158570048ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6086773517563338917ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14315233641963922863ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4593595283430268387ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14119971580838982106ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16393708724324570617ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 0U;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t = 0U;
+            if ((VL_LTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc) 
+                 & (0U != vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a))) {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc;
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14374967724556748228ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17924636325012253993ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12509334236639195211ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14463605751598722379ull);
+                if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout = 0U;
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v 
+                        = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = 0ULL;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = 0ULL;
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x17U;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x16U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x15U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x14U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x28U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x13U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x26U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x12U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x24U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x11U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x22U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x10U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x20U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xfU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xeU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xdU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xcU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x18U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xbU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x16U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xaU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x14U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 9U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x12U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 8U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x10U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 7U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xeU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 6U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xcU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 5U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xaU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 4U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 8U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 3U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 6U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 2U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 4U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 1U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 2U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v));
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xffffffffU;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result 
+                        = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result;
+                }
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                    = (- vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       + vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9186225828396251093ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7626581654461332152ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1853082831608623690ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4867832585039069791ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout;
+                if ((VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0) 
+                     & VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1))) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = (VL_LTS_III(32, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)
+                            ? vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0
+                            : vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1);
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0;
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1;
+                }
+            }
+            if (((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp) 
+                 & VL_LTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp))) {
+                if ((1U & ((~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit)) 
+                           | VL_LTS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t)))) {
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit = 1U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx = 0U;
+                }
+            }
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__radius_arr
+                [2U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cz_arr
+                [2U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cy_arr
+                [2U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cx_arr
+                [2U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox;
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13519907935916760914ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17523829047098598706ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6915133971940441336ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14218462539269401883ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7012966815262966393ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 521890057122423930ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 16138844365731735133ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7387013646017423878ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6769720365909642936ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 2487846061763008048ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13634344056869749502ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 1665804993324467915ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13581492113469855127ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7520616662362216257ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 9691310121070699475ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 667890717561891415ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4781647130674193867ull);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12196412921061641084ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5933339789773403821ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10578439553585465275ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1540603157582217177ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4497827452605074920ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10021609631861176901ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7261352059422220269ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9077533236546090554ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7702554106008646789ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10007237644158570048ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6086773517563338917ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14315233641963922863ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4593595283430268387ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14119971580838982106ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16393708724324570617ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 0U;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t = 0U;
+            if ((VL_LTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc) 
+                 & (0U != vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a))) {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc;
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14374967724556748228ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17924636325012253993ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12509334236639195211ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14463605751598722379ull);
+                if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout = 0U;
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v 
+                        = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = 0ULL;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = 0ULL;
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x17U;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x16U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x15U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x14U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x28U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x13U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x26U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x12U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x24U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x11U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x22U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x10U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x20U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xfU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xeU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xdU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xcU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x18U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xbU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x16U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xaU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x14U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 9U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x12U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 8U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x10U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 7U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xeU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 6U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xcU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 5U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xaU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 4U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 8U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 3U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 6U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 2U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 4U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 1U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 2U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v));
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xffffffffU;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result 
+                        = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result;
+                }
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                    = (- vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       + vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9186225828396251093ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7626581654461332152ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1853082831608623690ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4867832585039069791ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout;
+                if ((VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0) 
+                     & VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1))) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = (VL_LTS_III(32, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)
+                            ? vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0
+                            : vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1);
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0;
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1;
+                }
+            }
+            if (((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp) 
+                 & VL_LTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp))) {
+                if ((1U & ((~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit)) 
+                           | VL_LTS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t)))) {
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit = 1U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx = 1U;
+                }
+            }
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__radius_arr
+                [3U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cz_arr
+                [3U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cy_arr
+                [3U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__cx_arr
+                [3U];
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox;
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13519907935916760914ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17523829047098598706ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6915133971940441336ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14218462539269401883ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7012966815262966393ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 521890057122423930ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 16138844365731735133ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7387013646017423878ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6769720365909642936ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 2487846061763008048ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13634344056869749502ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 1665804993324467915ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13581492113469855127ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7520616662362216257ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 9691310121070699475ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 667890717561891415ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4781647130674193867ull);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ox 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cx);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oy 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cy);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__oz 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__cz);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12196412921061641084ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5933339789773403821ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10578439553585465275ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__7__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__dx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1540603157582217177ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4497827452605074920ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10021609631861176901ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__8__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ly;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__lx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7261352059422220269ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9077533236546090554ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7702554106008646789ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__9__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__radius;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10007237644158570048ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6086773517563338917ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__10__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__l2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__r2);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14315233641963922863ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4593595283430268387ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__11__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__c;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14119971580838982106ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16393708724324570617ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__rounded 
+                           >> 0x10U));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__12__Vfuncout;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc 
+                = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hb2 
+                   - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__ac);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 0U;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t = 0U;
+            if ((VL_LTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc) 
+                 & (0U != vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a))) {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__disc;
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14374967724556748228ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17924636325012253993ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12509334236639195211ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14463605751598722379ull);
+                if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout = 0U;
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v 
+                        = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__a)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem = 0ULL;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r = 0ULL;
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x17U;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x16U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x15U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x2aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x14U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x28U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x13U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x26U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x12U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x24U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x11U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x22U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0x10U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x20U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xfU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1eU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xeU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1cU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xdU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x1aU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xcU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x18U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xbU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x16U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xaU;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x14U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 9U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x12U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 8U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0x10U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 7U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xeU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 6U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xcU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 5U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 0xaU)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 4U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 8U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 3U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 6U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 2U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 4U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 1U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v, 2U)));
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0U;
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                        = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem, 2U) 
+                           | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__v));
+                    if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                         >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)))) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                            = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__rem 
+                               - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 2U)));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U));
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r 
+                            = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r, 1U);
+                    }
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__unnamedblk2__DOT__i = 0xffffffffU;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result 
+                        = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__r);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__result;
+                }
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__13__Vfuncout;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                    = (- vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__halfB);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1 
+                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__negHalfB 
+                       + vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__sqrtDisc);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num0;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9186225828396251093ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7626581654461332152ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__14__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__a;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__num1;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1853082831608623690ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4867832585039069791ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__15__Vfuncout;
+                if ((VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0) 
+                     & VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1))) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = (VL_LTS_III(32, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)
+                            ? vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0
+                            : vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1);
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t0;
+                } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1)) {
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit = 1U;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t1;
+                }
+            }
+            if (((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp) 
+                 & VL_LTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp))) {
+                if ((1U & ((~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit)) 
+                           | VL_LTS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t)))) {
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit = 1U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx = 2U;
+                }
+            }
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__hit;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__6__t;
+            if (((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp) 
+                 & VL_LTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp))) {
+                if ((1U & ((~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit)) 
+                           | VL_LTS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t)))) {
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit = 1U;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx = 3U;
+                }
+            }
+            if ((1U & (~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_hit)))) {
+                tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i 
+                    = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i 
+                       + VL_SHIFTRS_III(32,32,32, VL_MULS_III(32, (IData)(0x20U), tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i), 4U));
+                goto __Vlabel0;
+            }
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_x 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox 
+                   + ([&]() {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__b 
+                            = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__a 
+                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4572988755147016520ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15995630313151431025ull);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__full_prod 
+                            = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__a), 
+                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__b));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__rounded 
+                            = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__full_prod);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__Vfuncout 
+                            = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__rounded 
+                                       >> 0x10U));
+                    }(), vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__16__Vfuncout));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_y 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy 
+                   + ([&]() {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__b 
+                            = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__a 
+                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 3510107104760642155ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14982545314993756192ull);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__full_prod 
+                            = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__a), 
+                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__b));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__rounded 
+                            = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__full_prod);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__Vfuncout 
+                            = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__rounded 
+                                       >> 0x10U));
+                    }(), vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__17__Vfuncout));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_z 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz 
+                   + ([&]() {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__b 
+                            = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__a 
+                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_t;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7503476576754872501ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 3355019535547070596ull);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__full_prod 
+                            = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__a), 
+                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__b));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__rounded 
+                            = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__full_prod);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__Vfuncout 
+                            = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__rounded 
+                                       >> 0x10U));
+                    }(), vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__18__Vfuncout));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_raw_x 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_x 
+                   - vlSelfRef.tbGenericVga__DOT__dut__DOT__cx_arr
+                   [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)]);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_raw_y 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_y 
+                   - vlSelfRef.tbGenericVga__DOT__dut__DOT__cy_arr
+                   [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)]);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_raw_z 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_z 
+                   - vlSelfRef.tbGenericVga__DOT__dut__DOT__cz_arr
+                   [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)]);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__z 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_raw_z;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__y 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_raw_y;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__x 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_raw_x;
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14951250101871141905ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 2695418216536491517ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__z;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__y;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__x;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__z;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__y;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__x;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15759239256037546418ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 11460201776853731543ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6560109302694140190ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__20__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag2;
+            __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 18205578810737451842ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5707065549523006789ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9235544696939017339ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 10025533941907458495ull);
+            if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__a)) {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__Vfuncout = 0U;
+            } else {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v 
+                    = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__a)), 0x10U);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem = 0ULL;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r = 0ULL;
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x17U;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x2eU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x16U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x2cU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x15U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x2aU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x14U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x28U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x13U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x26U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x12U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x24U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x11U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x22U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0x10U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x20U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xfU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x1eU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xeU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x1cU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xdU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x1aU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xcU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x18U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xbU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x16U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xaU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x14U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 9U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x12U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 8U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0x10U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 7U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0xeU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 6U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0xcU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 5U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 0xaU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 4U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 8U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 3U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 6U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 2U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 4U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 1U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v, 2U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem, 2U) 
+                       | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__v));
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r, 1U);
+                }
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__unnamedblk2__DOT__i = 0xffffffffU;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__result 
+                    = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__r);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__result;
+            }
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__21__Vfuncout;
+            if (VL_GTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag)) {
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__nx = 0U;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__ny = 0U;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__nz = 0U;
+            } else {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__x;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4518844497483385574ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 9526535771529230927ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__nx 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__22__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__y;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12330098925520080770ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 10600960309222104921ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__ny 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__23__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__mag;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__z;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 11840982577287269802ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 5773187985267624905ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__nz 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__24__Vfuncout;
+            }
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_x 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__nx;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_y 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__ny;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_z 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__19__nz;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_r_i 
+                = VL_SHIFTRS_III(32,32,32, vlSelfRef.tbGenericVga__DOT__dut__DOT__colorR_arr
+                                 [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], 3U);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_g_i 
+                = VL_SHIFTRS_III(32,32,32, vlSelfRef.tbGenericVga__DOT__dut__DOT__colorG_arr
+                                 [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], 3U);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_b_i 
+                = VL_SHIFTRS_III(32,32,32, vlSelfRef.tbGenericVga__DOT__dut__DOT__colorB_arr
+                                 [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], 3U);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li = 0U;
+            {
+                while (VL_GTS_III(32, 2U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)) {
+                    if (VL_LTES_III(32, 8U, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i)) {
+                        goto __Vlabel1;
+                    }
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_x 
+                        = ((vlSymsp->TOP__scene_lut.LIGHTS
+                            [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][4U] 
+                            << 8U) | (vlSymsp->TOP__scene_lut.LIGHTS
+                                      [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][3U] 
+                                      >> 0x18U));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_y 
+                        = ((vlSymsp->TOP__scene_lut.LIGHTS
+                            [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][3U] 
+                            << 8U) | (vlSymsp->TOP__scene_lut.LIGHTS
+                                      [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][2U] 
+                                      >> 0x18U));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_z 
+                        = ((vlSymsp->TOP__scene_lut.LIGHTS
+                            [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][2U] 
+                            << 8U) | (vlSymsp->TOP__scene_lut.LIGHTS
+                                      [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][1U] 
+                                      >> 0x18U));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_colorR 
+                        = (0xffU & (vlSymsp->TOP__scene_lut.LIGHTS
+                                    [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][1U] 
+                                    >> 0x10U));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_colorG 
+                        = (0xffU & (vlSymsp->TOP__scene_lut.LIGHTS
+                                    [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][1U] 
+                                    >> 8U));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_colorB 
+                        = (0xffU & vlSymsp->TOP__scene_lut.LIGHTS
+                           [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][1U]);
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_intensity 
+                        = vlSymsp->TOP__scene_lut.LIGHTS
+                        [(1U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li)][0U];
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_x 
+                        = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_x 
+                           - vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_x);
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_y 
+                        = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_y 
+                           - vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_y);
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_z 
+                        = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_z 
+                           - vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_z);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__bz 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_z;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__by 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_y;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__bx 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_x;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__az 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_z;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__ay 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_y;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__ax 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_x;
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16946048411168665908ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10201726771013707923ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1937487103690704631ull);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__px 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__ax), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__bx)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__py 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__ay), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__by)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__pz 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__az), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__bz)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__Vfuncout 
+                        = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__px) 
+                            + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__py)) 
+                           + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__pz));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__a 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__26__Vfuncout;
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0;
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12236780273505085091ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9133774574176070936ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16746964867793764833ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4309269146583710105ull);
+                    if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__a)) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__Vfuncout = 0U;
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v 
+                            = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__a)), 0x10U);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem = 0ULL;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r = 0ULL;
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x17U;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x2eU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x16U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x2cU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x15U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x2aU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x14U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x28U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x13U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x26U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x12U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x24U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x11U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x22U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0x10U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x20U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xfU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x1eU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xeU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x1cU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xdU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x1aU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xcU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x18U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xbU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x16U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xaU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x14U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 9U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x12U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 8U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0x10U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 7U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0xeU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 6U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0xcU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 5U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 0xaU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 4U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 8U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 3U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 6U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 2U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 4U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 1U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v, 2U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem, 2U) 
+                               | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__v));
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r, 1U);
+                        }
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__unnamedblk2__DOT__i = 0xffffffffU;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__result 
+                            = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__r);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__Vfuncout 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__result;
+                    }
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__dist_to_light 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__25__Vfuncout;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__z 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_z;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__y 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_y;
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__x 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__to_light_x;
+                    vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 10879220736784956736ull);
+                    vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14767005834482401510ull);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__bz 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__z;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__by 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__y;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__bx 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__x;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__az 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__z;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__ay 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__y;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__ax 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__x;
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6008495072586868067ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9175677820601039378ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 11626634293631874390ull);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__px 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__ax), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__bx)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__py 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__ay), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__by)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__pz 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__az), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__bz)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__Vfuncout 
+                        = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__px) 
+                            + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__py)) 
+                           + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__pz));
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag2 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__28__Vfuncout;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__a 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag2;
+                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0;
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 8669577054439514140ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10852085343746535238ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9336869576461547450ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6425706599140370276ull);
+                    if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__a)) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__Vfuncout = 0U;
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v 
+                            = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__a)), 0x10U);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem = 0ULL;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r = 0ULL;
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x17U;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x2eU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x16U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x2cU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x15U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x2aU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x14U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x28U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x13U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x26U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x12U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x24U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x11U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x22U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0x10U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x20U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xfU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x1eU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xeU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x1cU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xdU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x1aU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xcU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x18U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xbU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x16U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xaU;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x14U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 9U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x12U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 8U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0x10U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 7U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0xeU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 6U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0xcU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 5U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 0xaU)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 4U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 8U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 3U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 6U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 2U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 4U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 1U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v, 2U)));
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0U;
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem, 2U) 
+                               | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__v));
+                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                             >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)))) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__rem 
+                                   - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 2U)));
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U));
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r 
+                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r, 1U);
+                        }
+                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__unnamedblk2__DOT__i = 0xffffffffU;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__result 
+                            = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__r);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__Vfuncout 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__result;
+                    }
+                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__29__Vfuncout;
+                    if (VL_GTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag)) {
+                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__nx = 0U;
+                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__ny = 0U;
+                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__nz = 0U;
+                    } else {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__b 
+                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__a 
+                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__x;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 2499197484393741783ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 11435337618758824129ull);
+                        if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__b)) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__quotient 
+                                = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__a)
+                                    ? 0x7fffffffU : 0x80000001U);
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__dividend_shifted 
+                                = VL_SHIFTL_QQI(64,64,32, 
+                                                VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__a), 0x10U);
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__quotient 
+                                = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__dividend_shifted, 
+                                                      VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__b)));
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__Vfuncout 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__quotient;
+                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__nx 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__30__Vfuncout;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__b 
+                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__a 
+                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__y;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15100474720736089055ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 5027314651428326861ull);
+                        if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__b)) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__quotient 
+                                = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__a)
+                                    ? 0x7fffffffU : 0x80000001U);
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__dividend_shifted 
+                                = VL_SHIFTL_QQI(64,64,32, 
+                                                VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__a), 0x10U);
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__quotient 
+                                = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__dividend_shifted, 
+                                                      VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__b)));
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__Vfuncout 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__quotient;
+                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__ny 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__31__Vfuncout;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__b 
+                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__mag;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__a 
+                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__z;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 11283876103222980211ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4793001603047363443ull);
+                        if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__b)) {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__quotient 
+                                = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__a)
+                                    ? 0x7fffffffU : 0x80000001U);
+                        } else {
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__dividend_shifted 
+                                = VL_SHIFTL_QQI(64,64,32, 
+                                                VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__a), 0x10U);
+                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__quotient 
+                                = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__dividend_shifted, 
+                                                      VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__b)));
+                        }
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__Vfuncout 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__quotient;
+                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__nz 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__32__Vfuncout;
+                    }
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_x 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__nx;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_y 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__ny;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_z 
+                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__27__nz;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__bz 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_z;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__by 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_y;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__bx 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_x;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__az 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_z;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__ay 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_y;
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__ax 
+                        = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_x;
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5354987905649123626ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14380369801607519873ull);
+                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17335586830638734126ull);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__px 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__ax), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__bx)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__py 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__ay), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__by)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__pz 
+                        = VL_SHIFTRS_QQI(64,64,32, 
+                                         VL_MULS_QQQ(64, 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__az), 
+                                                     VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__bz)), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__Vfuncout 
+                        = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__px) 
+                            + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__py)) 
+                           + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__pz));
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ndotl 
+                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__33__Vfuncout;
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__in_shadow = 0U;
+                    if (VL_LTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ndotl)) {
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__b = 0x28fU;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__a 
+                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_x;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7671328495388493ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 13420272766578742549ull);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__full_prod 
+                            = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__a), 
+                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__b));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__rounded 
+                            = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__full_prod);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__Vfuncout 
+                            = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__rounded 
+                                       >> 0x10U));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nx 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__34__Vfuncout;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__b = 0x28fU;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__a 
+                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_y;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16552824451453257705ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5711322847381914058ull);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__full_prod 
+                            = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__a), 
+                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__b));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__rounded 
+                            = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__full_prod);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__Vfuncout 
+                            = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__rounded 
+                                       >> 0x10U));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_ny 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__35__Vfuncout;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__b = 0x28fU;
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__a 
+                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_z;
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15124670281723446507ull);
+                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12013617952547393144ull);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__full_prod 
+                            = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__a), 
+                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__b));
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__rounded 
+                            = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__full_prod);
+                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__Vfuncout 
+                            = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__rounded 
+                                       >> 0x10U));
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nz 
+                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__36__Vfuncout;
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shad_ox 
+                            = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_x 
+                               + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nx);
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shad_oy 
+                            = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_y 
+                               + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_ny);
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shad_oz 
+                            = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_z 
+                               + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nz);
+                        vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2 = 0U;
+                        {
+                            while (VL_GTS_III(32, 4U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2)) {
+                                if (VL_LTES_III(32, 8U, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i)) {
+                                    goto __Vlabel2;
+                                }
+                                tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i 
+                                    = ((IData)(1U) 
+                                       + tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i);
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__radius 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__radius_arr
+                                    [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2)];
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__cz 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__cz_arr
+                                    [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2)];
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__cy 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__cy_arr
+                                    [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2)];
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__cx 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__cx_arr
+                                    [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2)];
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dz 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_z;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dy 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_y;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dx 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ldir_x;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__oz 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shad_oz;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__oy 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shad_oy;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ox 
+                                    = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shad_ox;
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lx = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14660334331107848354ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ly = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 11813169509743417455ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lz = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4424357011477934032ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__a = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6496271899468274690ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__halfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 12361224882202487317ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__l2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 3447469798953843056ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__r2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4371182939451606302ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__c = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 5158714675577062046ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hb2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 15215188166616041021ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ac = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 11243077027275143353ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__disc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13973472543452398602ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__sqrtDisc = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 10960354083050616237ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__negHalfB = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 14764472420373891157ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__num0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 15867915348902601767ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__num1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 12528848459995674850ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 8511996990571327801ull);
+                                vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 16543695090332358473ull);
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lx 
+                                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ox 
+                                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__cx);
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ly 
+                                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__oy 
+                                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__cy);
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lz 
+                                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__oz 
+                                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__cz);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__bz 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dz;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__by 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dy;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__bx 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dx;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__az 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dz;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__ay 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dy;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__ax 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dx;
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5075966146945354171ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4434182100322374676ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7214502063469697056ull);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__px 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__ax), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__bx)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__py 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__ay), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__by)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__pz 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__az), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__bz)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__Vfuncout 
+                                    = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__px) 
+                                        + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__py)) 
+                                       + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__pz));
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__a 
+                                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__38__Vfuncout;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__bz 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dz;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__by 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dy;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__bx 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__dx;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__az 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lz;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__ay 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ly;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__ax 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lx;
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9879459643320629201ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6997609200652698126ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4829474278986547999ull);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__px 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__ax), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__bx)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__py 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__ay), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__by)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__pz 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__az), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__bz)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__Vfuncout 
+                                    = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__px) 
+                                        + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__py)) 
+                                       + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__pz));
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__halfB 
+                                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__39__Vfuncout;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__bz 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lz;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__by 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ly;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__bx 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lx;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__az 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lz;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__ay 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ly;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__ax 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__lx;
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4172619749548879420ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17292653421451676004ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15604466366718511719ull);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__px 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__ax), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__bx)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__py 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__ay), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__by)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__pz 
+                                    = VL_SHIFTRS_QQI(64,64,32, 
+                                                     VL_MULS_QQQ(64, 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__az), 
+                                                                 VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__bz)), 0x10U);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__Vfuncout 
+                                    = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__px) 
+                                        + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__py)) 
+                                       + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__pz));
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__l2 
+                                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__40__Vfuncout;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__b 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__radius;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__a 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__radius;
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 10249077643585080821ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16558481553218732207ull);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__full_prod 
+                                    = VL_MULS_QQQ(64, 
+                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__a), 
+                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__b));
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__rounded 
+                                    = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__full_prod);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__Vfuncout 
+                                    = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__rounded 
+                                               >> 0x10U));
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__r2 
+                                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__41__Vfuncout;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__c 
+                                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__l2 
+                                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__r2);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__b 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__halfB;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__a 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__halfB;
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 18053253806432666443ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 835223058469399992ull);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__full_prod 
+                                    = VL_MULS_QQQ(64, 
+                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__a), 
+                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__b));
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__rounded 
+                                    = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__full_prod);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__Vfuncout 
+                                    = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__rounded 
+                                               >> 0x10U));
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hb2 
+                                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__42__Vfuncout;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__b 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__c;
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__a 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__a;
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14867566901579130988ull);
+                                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 1782628726235396121ull);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__full_prod 
+                                    = VL_MULS_QQQ(64, 
+                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__a), 
+                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__b));
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__rounded 
+                                    = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__full_prod);
+                                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__Vfuncout 
+                                    = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__rounded 
+                                               >> 0x10U));
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ac 
+                                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__43__Vfuncout;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__disc 
+                                    = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hb2 
+                                       - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__ac);
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hit = 0U;
+                                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t = 0U;
+                                if ((VL_LTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__disc) 
+                                     & (0U != vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__a))) {
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__a 
+                                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__disc;
+                                    __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0;
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12081164718258595227ull);
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12676242715004090745ull);
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 12967999127821366075ull);
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 1994190178147879951ull);
+                                    if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__a)) {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__Vfuncout = 0U;
+                                    } else {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v 
+                                            = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__a)), 0x10U);
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem = 0ULL;
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r = 0ULL;
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x17U;
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x2eU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x16U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x2cU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x15U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x2aU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x14U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x28U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x13U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x26U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x12U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x24U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x11U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x22U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0x10U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x20U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xfU;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x1eU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xeU;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x1cU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xdU;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x1aU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xcU;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x18U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xbU;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x16U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xaU;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x14U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 9U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x12U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 8U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0x10U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 7U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0xeU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 6U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0xcU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 5U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 0xaU)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 4U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 8U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 3U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 6U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 2U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 4U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 1U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v, 2U)));
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0U;
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                            = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem, 2U) 
+                                               | (3ULL 
+                                                  & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__v));
+                                        if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                             >= (1ULL 
+                                                 | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)))) {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__rem 
+                                                   - 
+                                                   (1ULL 
+                                                    | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 2U)));
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = (1ULL 
+                                                   | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U));
+                                        } else {
+                                            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r 
+                                                = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r, 1U);
+                                        }
+                                        __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__unnamedblk2__DOT__i = 0xffffffffU;
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__result 
+                                            = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__r);
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__Vfuncout 
+                                            = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__result;
+                                    }
+                                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__sqrtDisc 
+                                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__44__Vfuncout;
+                                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__negHalfB 
+                                        = (- vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__halfB);
+                                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__num0 
+                                        = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__negHalfB 
+                                           - vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__sqrtDisc);
+                                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__num1 
+                                        = (vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__negHalfB 
+                                           + vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__sqrtDisc);
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__b 
+                                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__a;
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__a 
+                                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__num0;
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7716797885192202868ull);
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13359939581375274652ull);
+                                    if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__b)) {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__quotient 
+                                            = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__a)
+                                                ? 0x7fffffffU
+                                                : 0x80000001U);
+                                    } else {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__dividend_shifted 
+                                            = VL_SHIFTL_QQI(64,64,32, 
+                                                            VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__a), 0x10U);
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__quotient 
+                                            = (IData)(
+                                                      VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__dividend_shifted, 
+                                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__b)));
+                                    }
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__Vfuncout 
+                                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__quotient;
+                                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0 
+                                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__45__Vfuncout;
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__b 
+                                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__a;
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__a 
+                                        = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__num1;
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9267894227498564556ull);
+                                    vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 5713632087246674070ull);
+                                    if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__b)) {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__quotient 
+                                            = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__a)
+                                                ? 0x7fffffffU
+                                                : 0x80000001U);
+                                    } else {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__dividend_shifted 
+                                            = VL_SHIFTL_QQI(64,64,32, 
+                                                            VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__a), 0x10U);
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__quotient 
+                                            = (IData)(
+                                                      VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__dividend_shifted, 
+                                                                  VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__b)));
+                                    }
+                                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__Vfuncout 
+                                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__quotient;
+                                    vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1 
+                                        = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__46__Vfuncout;
+                                    if ((VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0) 
+                                         & VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1))) {
+                                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hit = 1U;
+                                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t 
+                                            = (VL_LTS_III(32, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1)
+                                                ? vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0
+                                                : vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1);
+                                    } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0)) {
+                                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hit = 1U;
+                                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t 
+                                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t0;
+                                    } else if (VL_LTS_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1)) {
+                                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hit = 1U;
+                                        vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t 
+                                            = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t1;
+                                    }
+                                }
+                                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__hit;
+                                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp 
+                                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__ray_sphere_task__37__t;
+                                if ((((IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_tmp) 
+                                      & VL_LTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp)) 
+                                     & VL_LTS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__t_tmp, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__dist_to_light))) {
+                                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__in_shadow = 1U;
+                                    goto __Vlabel2;
+                                }
+                                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2 
+                                    = ((IData)(1U) 
+                                       + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__unnamedblk7__DOT__si2);
+                            }
+                            __Vlabel2: ;
+                        }
+                        if ((1U & (~ (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__in_shadow)))) {
+                            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i 
+                                = VL_SHIFTRS_III(32,32,32, 
+                                                 ([&]() {
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__b 
+                                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_intensity;
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__a 
+                                            = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ndotl;
+                                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9349561314598260291ull);
+                                        vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17113079509715409962ull);
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__full_prod 
+                                            = VL_MULS_QQQ(64, 
+                                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__a), 
+                                                          VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__b));
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__rounded 
+                                            = (0x8000ULL 
+                                               + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__full_prod);
+                                        vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__Vfuncout 
+                                            = (IData)(
+                                                      (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__rounded 
+                                                       >> 0x10U));
+                                    }(), vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__47__Vfuncout), 0xcU);
+                            if (VL_LTS_III(32, 0x10U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i)) {
+                                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i = 0x10U;
+                            }
+                            if (VL_GTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i)) {
+                                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i = 0U;
+                            }
+                            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_r_i 
+                                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_r_i 
+                                   + VL_SHIFTRS_III(32,32,32, 
+                                                    VL_MULS_III(32, 
+                                                                VL_SHIFTRS_III(32,32,32, 
+                                                                               VL_MULS_III(32, 
+                                                                                vlSelfRef.tbGenericVga__DOT__dut__DOT__colorR_arr
+                                                                                [
+                                                                                (3U 
+                                                                                & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_colorR)), 8U), vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i), 4U));
+                            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_g_i 
+                                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_g_i 
+                                   + VL_SHIFTRS_III(32,32,32, 
+                                                    VL_MULS_III(32, 
+                                                                VL_SHIFTRS_III(32,32,32, 
+                                                                               VL_MULS_III(32, 
+                                                                                vlSelfRef.tbGenericVga__DOT__dut__DOT__colorG_arr
+                                                                                [
+                                                                                (3U 
+                                                                                & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_colorG)), 8U), vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i), 4U));
+                            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_b_i 
+                                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_b_i 
+                                   + VL_SHIFTRS_III(32,32,32, 
+                                                    VL_MULS_III(32, 
+                                                                VL_SHIFTRS_III(32,32,32, 
+                                                                               VL_MULS_III(32, 
+                                                                                vlSelfRef.tbGenericVga__DOT__dut__DOT__colorB_arr
+                                                                                [
+                                                                                (3U 
+                                                                                & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], (IData)(vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__light_colorB)), 8U), vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__difQInt_i), 4U));
+                        }
+                    }
+                    vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li 
+                        = ((IData)(1U) + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk6__DOT__li);
+                }
+                __Vlabel1: ;
+            }
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_r_i 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_r_i 
+                   + VL_SHIFTRS_III(32,32,32, VL_MULS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_r_i, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i), 4U));
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_g_i 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_g_i 
+                   + VL_SHIFTRS_III(32,32,32, VL_MULS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_g_i, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i), 4U));
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i 
+                   + VL_SHIFTRS_III(32,32,32, VL_MULS_III(32, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__shade_b_i, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i), 4U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i 
+                = VL_SHIFTRS_III(32,32,32, vlSelfRef.tbGenericVga__DOT__dut__DOT__refl_arr
+                                 [(3U & vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__nearest_idx)], 0xcU);
+            if (VL_GTS_III(32, 0U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i)) {
+                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i = 0U;
+            }
+            if (VL_LTS_III(32, 0x10U, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i)) {
+                vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i = 0x10U;
+            }
+            if (((0U == vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i) 
+                 | VL_LTES_III(32, 8U, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__iter_i))) {
+                goto __Vlabel0;
+            }
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i 
+                = VL_SHIFTRS_III(32,32,32, VL_MULS_III(32, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i, vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__rMix_i), 4U);
+            if (VL_GTS_III(32, 1U, tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__weight_i)) {
+                goto __Vlabel0;
+            }
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__bz 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_z;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__by 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_y;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__bx 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_x;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__az 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__ay 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__ax 
+                = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 2970951805237270749ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 17531989475019832412ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 5091853301509847947ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__pz));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ndotn 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__48__Vfuncout;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__two_ndotn 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ndotn 
+                   + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ndotn);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__b 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__two_ndotn;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__a 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_x;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4533960236073141296ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 8432797559121277745ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__rounded 
+                           >> 0x10U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__proj_x 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__49__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__b 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__two_ndotn;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__a 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_y;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14845520519595805462ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 4862727936390249659ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__rounded 
+                           >> 0x10U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__proj_y 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__50__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__b 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__two_ndotn;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__a 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_z;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14679146713290750086ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 14465973341727761365ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__rounded 
+                           >> 0x10U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__proj_z 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__51__Vfuncout;
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__refl_raw_x 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx 
+                   - vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__proj_x);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__refl_raw_y 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy 
+                   - vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__proj_y);
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__refl_raw_z 
+                = (tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz 
+                   - vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__proj_z);
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__z 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__refl_raw_z;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__y 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__refl_raw_y;
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__x 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__refl_raw_x;
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag2 = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 7461771992862876635ull);
+            vlSelf->__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 13400231284223538116ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__bz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__z;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__by 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__y;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__bx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__x;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__az 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__z;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__ay 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__y;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__ax 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__x;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__px = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 537452213341464522ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__py = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7501338406899241135ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__pz = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16257361339582532555ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__px 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__ax), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__bx)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__py 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__ay), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__by)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__pz 
+                = VL_SHIFTRS_QQI(64,64,32, VL_MULS_QQQ(64, 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__az), 
+                                                       VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__bz)), 0x10U);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__Vfuncout 
+                = (((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__px) 
+                    + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__py)) 
+                   + (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__pz));
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag2 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_dot3_fn__53__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__a 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag2;
+            __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 3584469791485300974ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9390059231164110899ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16995954553967253607ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__result = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17698870241899826449ull);
+            if (VL_GTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__a)) {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__Vfuncout = 0U;
+            } else {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v 
+                    = VL_SHIFTL_QQI(64,64,32, (QData)((IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__a)), 0x10U);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem = 0ULL;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r = 0ULL;
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x17U;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x2eU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x16U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x2cU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x15U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x2aU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x14U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x28U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x13U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x26U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x12U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x24U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x11U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x22U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0x10U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x20U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xfU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x1eU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xeU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x1cU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xdU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x1aU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xcU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x18U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xbU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x16U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xaU;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x14U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 9U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x12U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 8U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0x10U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 7U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0xeU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 6U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0xcU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 5U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 0xaU)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 4U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 8U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 3U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 6U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 2U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 4U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 1U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & VL_SHIFTR_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v, 2U)));
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0U;
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                    = (VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem, 2U) 
+                       | (3ULL & vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__v));
+                if ((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                     >= (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)))) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                        = (vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__rem 
+                           - (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 2U)));
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = (1ULL | VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U));
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r 
+                        = VL_SHIFTL_QQI(64,64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r, 1U);
+                }
+                __Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__unnamedblk2__DOT__i = 0xffffffffU;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__result 
+                    = (IData)(vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__r);
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__result;
+            }
+            vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_sqrt_fn__54__Vfuncout;
+            if (VL_GTES_III(32, 0U, vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag)) {
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__nx = 0U;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__ny = 0U;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__nz = 0U;
+            } else {
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__x;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 16973278064757925775ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 2604597395744547803ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__nx 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__55__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__y;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 3462318616938949945ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17779186497537899567ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__ny 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__56__Vfuncout;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__b 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__mag;
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__a 
+                    = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__z;
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__dividend_shifted = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 7396961590361159065ull);
+                vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__quotient = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 8292894958336512626ull);
+                if ((0U == vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__b)) {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__quotient 
+                        = (VL_LTES_III(32, 0U, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__a)
+                            ? 0x7fffffffU : 0x80000001U);
+                } else {
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__dividend_shifted 
+                        = VL_SHIFTL_QQI(64,64,32, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__a), 0x10U);
+                    vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__quotient 
+                        = (IData)(VL_DIVS_QQQ(64, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__dividend_shifted, 
+                                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__b)));
+                }
+                vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__Vfuncout 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__quotient;
+                vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__nz 
+                    = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_div_fn__57__Vfuncout;
+            }
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dx 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__nx;
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dy 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__ny;
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_dz 
+                = vlSelfRef.__Vtask_tbGenericVga__DOT__dut__DOT__normalize3_task__52__nz;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__b = 0x28fU;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__a 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_x;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 634989051143866950ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 9482540648177943332ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__rounded 
+                           >> 0x10U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nx 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__58__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__b = 0x28fU;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__a 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_y;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 13539618192366601084ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 6905190017220380867ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__rounded 
+                           >> 0x10U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_ny 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__59__Vfuncout;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__b = 0x28fU;
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__a 
+                = vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__norm_z;
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__full_prod = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15835867242468610180ull);
+            vlSelf->__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__rounded = VL_SCOPED_RAND_RESET_Q(64, __VscopeHash, 15203882586047876088ull);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__full_prod 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__a), 
+                              VL_EXTENDS_QI(64,32, vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__b));
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__rounded 
+                = (0x8000ULL + vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__full_prod);
+            vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__Vfuncout 
+                = (IData)((vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__rounded 
+                           >> 0x10U));
+            vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nz 
+                = vlSelfRef.__Vfunc_tbGenericVga__DOT__dut__DOT__q16_mul_fn__60__Vfuncout;
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_ox 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_x 
+                   + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nx);
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oy 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_y 
+                   + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_ny);
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__ray_oz 
+                = (vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__hit_z 
+                   + vlSelfRef.tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__eps_nz);
+            tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__bounce 
+                = ((IData)(1U) + tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__unnamedblk4__DOT__bounce);
+        }
+        __Vlabel0: ;
+    }
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__v 
+        = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_r_i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__Vfuncout 
+        = (VL_GTS_III(32, 0U, __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__v)
+            ? 0U : (VL_LTS_III(32, 0xffU, __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__v)
+                     ? 0xffU : (0xffU & __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__v)));
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__final_r_comb 
+        = __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__61__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__v 
+        = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_g_i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__Vfuncout 
+        = (VL_GTS_III(32, 0U, __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__v)
+            ? 0U : (VL_LTS_III(32, 0xffU, __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__v)
+                     ? 0xffU : (0xffU & __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__v)));
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__final_g_comb 
+        = __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__62__Vfuncout;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__v 
+        = tbGenericVga__DOT__dut__DOT__unnamedblk3__DOT__accum_b_i;
+    __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__Vfuncout 
+        = (VL_GTS_III(32, 0U, __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__v)
+            ? 0U : (VL_LTS_III(32, 0xffU, __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__v)
+                     ? 0xffU : (0xffU & __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__v)));
+    vlSelfRef.tbGenericVga__DOT__dut__DOT__final_b_comb 
+        = __Vfunc_tbGenericVga__DOT__dut__DOT__clamp_u8_fn__63__Vfuncout;
+    if (tbGenericVga__DOT__dut__DOT__output_valid) {
+        vlSelfRef.red = vlSelfRef.tbGenericVga__DOT__dut__DOT__final_r_comb;
+        vlSelfRef.green = vlSelfRef.tbGenericVga__DOT__dut__DOT__final_g_comb;
+        vlSelfRef.blue = vlSelfRef.tbGenericVga__DOT__dut__DOT__final_b_comb;
+    } else {
+        vlSelfRef.red = 0U;
+        vlSelfRef.green = 0U;
+        vlSelfRef.blue = 0x20U;
+    }
+}

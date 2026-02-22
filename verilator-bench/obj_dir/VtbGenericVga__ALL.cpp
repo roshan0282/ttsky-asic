@@ -8,4 +8,6 @@
 #include "VtbGenericVga___024root__DepSet_hb949ed96__0__Slow.cpp"
 #include "VtbGenericVga___024unit__Slow.cpp"
 #include "VtbGenericVga___024unit__DepSet_he6aebcb2__0__Slow.cpp"
+#include "VtbGenericVga_scene_lut__Slow.cpp"
+#include "VtbGenericVga_scene_lut__DepSet_h879c9511__0__Slow.cpp"
 #include "VtbGenericVga__Syms.cpp"

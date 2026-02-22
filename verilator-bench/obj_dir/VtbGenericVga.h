@@ -12,6 +12,8 @@
 
 class VtbGenericVga__Syms;
 class VtbGenericVga___024root;
+class VtbGenericVga_scene_lut;
+
 
 // This class is the main interface to the Verilated model
 class alignas(VL_CACHE_LINE_BYTES) VtbGenericVga VL_NOT_FINAL : public VerilatedModel {
@@ -42,6 +44,7 @@ class alignas(VL_CACHE_LINE_BYTES) VtbGenericVga VL_NOT_FINAL : public Verilated
     // CELLS
     // Public to allow access to /* verilator public */ items.
     // Otherwise the application code can consider these internals.
+    VtbGenericVga_scene_lut* const __PVT__scene_lut;
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.

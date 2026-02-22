@@ -19,6 +19,7 @@ VtbGenericVga::VtbGenericVga(VerilatedContext* _vcontextp__, const char* _vcname
     , blue{vlSymsp->TOP.blue}
     , xOrd{vlSymsp->TOP.xOrd}
     , yOrd{vlSymsp->TOP.yOrd}
+    , __PVT__scene_lut{vlSymsp->TOP.__PVT__scene_lut}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context
