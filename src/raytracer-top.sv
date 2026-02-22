@@ -29,8 +29,8 @@ module raytracer_top (
     output logic        output_valid
 );
 
-    localparam int NUM_SPHERES     = 16;
-    localparam int NUM_LIGHTS      = 16;
+    localparam int NUM_SPHERES     = 4;
+    localparam int NUM_LIGHTS      = 4;
     localparam int MAX_BOUNCES     = 4;
     localparam int MAX_ITERATIONS  = 8;
     localparam logic signed [31:0] Q16_ONE = 32'sd65536;
