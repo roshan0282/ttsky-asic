@@ -14,7 +14,7 @@ jobs:
       #   run: sudo apt-get update && sudo apt-get install -y iverilog
       - name: Install Verilator pre-built binary
         run: |
-          wget https://github.com/verilator/verilator/releases/download/v5.036/verilator_5.036_ubuntu22.04_amd64.deb
+          wget https://github.com/verilator/verilator/releases/tag/v5.036
           sudo dpkg -i verilator_5.036_ubuntu22.04_amd64.deb
           verilator --version
 
