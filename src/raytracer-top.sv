@@ -16,7 +16,7 @@
 
 import scene_lut::*;
 
-module raytracer_simple (
+module raytracer_top (
     input  logic        clk,
     input  logic        rst_n,
     
