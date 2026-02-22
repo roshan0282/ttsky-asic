@@ -14,7 +14,7 @@
 `timescale 1ns/1ps
 `default_nettype none
 
-//random
+//random 2
 module raytracer_top (
     input  logic        clk,
     input  logic        rst_n,
