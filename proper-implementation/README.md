@@ -11,10 +11,10 @@ This folder contains the SystemVerilog conversion of the C++ Q16.16 raytracer fo
 - **scene_lut.sv** - Compile-time scene definition (3 spheres + 1 light)
 
 ### Raytracer
-- **raytracer_simple.sv** - Simplified single-bounce raytracer
-  - Combinational pipeline (3-cycle latency)
-  - Basic diffuse lighting (no shadows yet)
-  - Parallel sphere intersection
+- **raytracer_simple.sv** - Streaming raytracer (shadows + bounded multi-bounce)
+  - Zero-latency per-pixel evaluation for VGA stream alignment
+  - Diffuse lighting + shadow rays
+  - Multi-bounce reflections (bounded by iteration budget)
   
 - **raytracer_pipeline.sv** - Full multi-bounce version (WIP)
   - State machine for multi-bounce reflections
@@ -105,17 +105,17 @@ bash run.sh
 3. ✅ Ray-sphere intersection
 4. ✅ Scene LUT
 5. ✅ Simple single-bounce raytracer
-6. ⏳ Visual verification in verilator
-7. ⏳ Add shadow rays
-8. ⏳ Add multi-bounce reflections
+6. ✅ Visual verification in verilator
+7. ✅ Add shadow rays
+8. ✅ Add multi-bounce reflections
 9. ⏳ Optimize for TinyTapeout constraints
 
 ## Differences from C++ Implementation
 
-### Current (Simplified)
-- Single bounce only
-- No shadow rays
-- Basic diffuse shading
+### Current (Implemented)
+- Shadow rays enabled (single light)
+- Multi-bounce reflections enabled (bounded loop)
+- Time-budget style iteration cap (`MAX_ITERATIONS`)
 
 ### Planned
 - Multi-bounce with time budget (MAX_ITERATIONS=8)
@@ -127,4 +127,4 @@ bash run.sh
 - All modules use `timescale 1ns/1ps` for simulation
 - Files use `/* verilator lint_off DECLFILENAME */` to allow multiple modules per file
 - Scene data is compile-time only (no RAM)
-- Pipeline latency: 3 cycles (camera → intersection → shading → output)
+- Streaming flow: color is computed from current input pixel each cycle (no cross-pixel latency)
