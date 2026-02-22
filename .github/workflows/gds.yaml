@@ -6,30 +6,29 @@ on:
 
 jobs:
   gds:
-    runs-on: ubuntu-24.04
-    env:
-      OPENLANE_NUM_THREADS: 1
-      OMP_NUM_THREADS: 1
-      MKL_NUM_THREADS: 1
+    runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout repo
+        uses: actions/checkout@v4
         with:
           submodules: recursive
+
       - name: Build GDS
         uses: TinyTapeout/tt-gds-action@ttsky25b
         with:
           pdk: sky130A
 
+
   precheck:
     needs: gds
-    runs-on: ubuntu-24.04
+    runs-on: self-hosted
     steps:
       - name: Run Tiny Tapeout Precheck
         uses: TinyTapeout/tt-gds-action/precheck@ttsky25b
 
   gl_test:
     needs: gds
-    runs-on: ubuntu-24.04
+    runs-on: self-hosted
     steps:
       - name: checkout repo
         uses: actions/checkout@v4
@@ -41,7 +40,7 @@ jobs:
 
   viewer:
     needs: gds
-    runs-on: ubuntu-24.04
+    runs-on: self-hosted
     permissions:
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source

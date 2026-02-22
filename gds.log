@@ -1,0 +1,95 @@
+time="2026-02-22T02:56:09-05:00" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+[gds/gds] ⭐ Run Set up job
+[gds/gds] 🚀  Start image=catthehacker/ubuntu:act-24.04
+[gds/gds]   🐳  docker pull image=catthehacker/ubuntu:act-24.04 platform= username= forcePull=true
+[gds/gds] using DockerAuthConfig authentication for docker pull
+[gds/gds]   🐳  docker create image=catthehacker/ubuntu:act-24.04 platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+[gds/gds]   🐳  docker run image=catthehacker/ubuntu:act-24.04 platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+[gds/gds]   🐳  docker exec cmd=[node --no-warnings -e console.log(process.execPath)] user= workdir=
+[gds/gds]   ✅  Success - Set up job
+[gds/gds]   ☁  git clone 'https://github.com/TinyTapeout/tt-gds-action' # ref=ttsky25b
+[gds/gds] ⭐ Run Pre Build GDS
+[gds/gds]   ☁  git clone 'https://github.com/awalsh128/cache-apt-pkgs-action' # ref=v1.4.3
+[gds/gds] ⭐ Run Pre Install prerequisites
+[gds/gds]   ☁  git clone 'https://github.com/actions/cache' # ref=v4
+[gds/gds]   ☁  git clone 'https://github.com/actions/upload-artifact' # ref=v4
+[gds/gds]   ☁  git clone 'https://github.com/actions/cache' # ref=v4
+[gds/gds]   ✅  Success - Pre Install prerequisites [2m8.678430005s]
+[gds/gds]   ☁  git clone 'https://github.com/actions/checkout' # ref=v4
+[gds/gds]   ☁  git clone 'https://github.com/actions/checkout' # ref=v4
+[gds/gds]   ☁  git clone 'https://github.com/actions/setup-python' # ref=v5
+[gds/gds]   ☁  git clone 'https://github.com/actions/upload-artifact' # ref=v4
+[gds/gds]   ☁  git clone 'https://github.com/actions/upload-artifact' # ref=v4
+[gds/gds]   ☁  git clone 'https://github.com/actions/upload-artifact' # ref=v4
+[gds/gds]   ✅  Success - Pre Build GDS [3m12.515772848s]
+[gds/gds] ⭐ Run Main actions/checkout@v4
+[gds/gds]   🐳  docker cp src=/mnt/c/Users/Roshan/Documents/ttsky-asic/. dst=/mnt/c/Users/Roshan/Documents/ttsky-asic
+[gds/gds]   ✅  Success - Main actions/checkout@v4 [18.778333773s]
+[gds/gds] ⭐ Run Main Build GDS
+[gds/gds]   🐳  docker cp src=/home/roshan/.cache/act/TinyTapeout-tt-gds-action@ttsky25b/ dst=/var/run/act/actions/TinyTapeout-tt-gds-action@ttsky25b/
+[gds/gds] ⭐ Run Main Set up environment variables
+[gds/gds]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-0.sh] user= workdir=
+[gds/gds]   ✅  Success - Main Set up environment variables [1.951461599s]
+[gds/gds]   ⚙  ::set-env:: PDK=sky130A
+[gds/gds]   ⚙  ::set-env:: PDK_ROOT=/home/runner/pdk
+[gds/gds]   ⚙  ::set-env:: TT_ARGS=
+[gds/gds] ⭐ Run Main Install prerequisites
+[gds/gds]   🐳  docker cp src=/home/roshan/.cache/act/awalsh128-cache-apt-pkgs-action@v1.4.3/ dst=/var/run/act/actions/awalsh128-cache-apt-pkgs-action@v1.4.3/
+[gds/gds] ⭐ Run Main ${GITHUB_ACTION_PATH}/pre_cache_action.sh \
+  ~/cache-apt-pkgs \
+  "$VERSION" \
+  "$EXEC_INSTALL_SCRIPTS" \
+  "$DEBUG" \
+  "$PACKAGES"
+echo "CACHE_KEY=$(cat ~/cache-apt-pkgs/cache_key.md5)" >> $GITHUB_ENV
+[gds/gds]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-1-composite-pre-cache.sh] user= workdir=
+[gds/gds]   | 08:00:14.184 Normalizing package list...
+[gds/gds]   | 08:00:14.310 done
+[gds/gds]   | 08:00:14.316 Validating action arguments (version='tinytapeout_gds_action', packages='')...
+[gds/gds]   | 08:00:14.322 aborted
+[gds/gds]   | 08:00:14.323 Packages argument cannot be empty.
+[gds/gds]   ❌  Failure - Main ${GITHUB_ACTION_PATH}/pre_cache_action.sh \
+  ~/cache-apt-pkgs \
+  "$VERSION" \
+  "$EXEC_INSTALL_SCRIPTS" \
+  "$DEBUG" \
+  "$PACKAGES"
+echo "CACHE_KEY=$(cat ~/cache-apt-pkgs/cache_key.md5)" >> $GITHUB_ENV
+ [1.963603824s]
+[gds/gds] exitcode '3': failure
+[gds/gds]   ⚙  ::set-output:: cache-hit=false
+[gds/gds]   ⚙  ::set-output:: package-version-list=
+[gds/gds]   ⚙  ::set-output:: all-package-version-list=
+[gds/gds]   ❌  Failure - Main Install prerequisites [16.603818682s]
+[gds/gds] exitcode '3': failure
+[gds/gds] ⭐ Run Main Linter output
+[gds/gds]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-10.sh] user= workdir=
+[gds/gds]   | DEBUG LINTER_LOG *runs/wokwi/*-verilator-lint/verilator-lint.log*
+[gds/gds]   | cat: 'runs/wokwi/*-verilator-lint/verilator-lint.log': No such file or directory
+[gds/gds]   ❌  Failure - Main Linter output [1.823773355s]
+[gds/gds] exitcode '1': failure
+[gds/gds] ⭐ Run Main Publish build logs
+[gds/gds]   🐳  docker cp src=/home/roshan/.cache/act/actions-upload-artifact@v4/ dst=/var/run/act/actions/actions-upload-artifact@v4/
+[gds/gds]   🐳  docker exec cmd=[/opt/acttoolcache/node/24.13.1/x64/bin/node /var/run/act/actions/actions-upload-artifact@v4/dist/upload/index.js] user= workdir=
+[gds/gds]   | (node:80) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[gds/gds]   | (Use `node --trace-deprecation ...` to show where the warning was created)
+[gds/gds]   | Multiple search paths detected. Calculating the least common ancestor of all paths
+[gds/gds]   | The least common ancestor is /mnt/c/Users/Roshan/Documents/ttsky-asic. This will be the root directory of the artifact
+[gds/gds]   | With the provided path, there will be 7 files uploaded
+[gds/gds]   | Artifact name is valid!
+[gds/gds]   | Root directory input is valid!
+[gds/gds]   ❗  ::error::Unable to get the ACTIONS_RUNTIME_TOKEN env variable
+[gds/gds]   ❌  Failure - Main Publish build logs [1.978690067s]
+[gds/gds] exitcode '1': failure
+[gds/gds]   ❌  Failure - Main Build GDS [1m5.631278634s]
+[gds/gds] exitcode '1': failure
+[gds/gds] ⭐ Run Post Build GDS
+[gds/gds]   🐳  docker cp src=/home/roshan/.cache/act/TinyTapeout-tt-gds-action@ttsky25b/ dst=/var/run/act/actions/TinyTapeout-tt-gds-action@ttsky25b/
+[gds/gds] ⭐ Run Post Install prerequisites
+[gds/gds]   🐳  docker cp src=/home/roshan/.cache/act/awalsh128-cache-apt-pkgs-action@v1.4.3/ dst=/var/run/act/actions/awalsh128-cache-apt-pkgs-action@v1.4.3/
+[gds/gds]   ✅  Success - Post Install prerequisites [190.902561ms]
+[gds/gds]   ✅  Success - Post Build GDS [2.588620842s]
+[gds/gds] ⭐ Run Complete job
+[gds/gds]   ✅  Success - Complete job
+[gds/gds] 🏁  Job failed
+Error: Job 'gds' failed
