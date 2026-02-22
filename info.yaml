@@ -18,12 +18,12 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "asic.v"
-    - "tt_um_asic.v"
     - "primitives.v"
     - "ray-sphere-intersect.sv"
     - "raytracer-top.sv"
-    - "scene-lut.svh"
-    - "scene-streamer.sv"
+    - "scene-lut.sv"
+    - "tt_um_asic.v"
+    - "vec3_q16.sv"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
