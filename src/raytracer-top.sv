@@ -224,7 +224,6 @@ module raytracer_top (
     logic [7:0] final_b_comb;
 
     // ── Full per-pixel trace (combinational, based on current pixel) ─────────
-    always_comb begin
         logic signed [31:0] ray_ox, ray_oy, ray_oz;
         logic signed [31:0] ray_dx, ray_dy, ray_dz;
         logic signed [31:0] raw_dx, raw_dy, raw_dz;
@@ -266,7 +265,8 @@ module raytracer_top (
         int difQInt_i;
 
         logic done_bouncing;
-
+    
+    always_comb begin
         centered_x = $signed({1'b0, pixel_x}) - 32'sd320;
         centered_y = 32'sd240 - $signed({1'b0, pixel_y});
         raw_dx = centered_x <<< 14;
