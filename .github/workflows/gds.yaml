@@ -7,12 +7,14 @@ on:
 jobs:
   gds:
     runs-on: ubuntu-24.04
+    env:
+      OPENLANE_NUM_THREADS: 1
+      OMP_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
     steps:
-      - name: checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
-
       - name: Build GDS
         uses: TinyTapeout/tt-gds-action@ttsky25b
         with:
